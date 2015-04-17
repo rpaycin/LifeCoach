@@ -7,6 +7,7 @@
 //
 
 #import "TableViewCell.h"
+#import "sporYonetim.h"
 
 @implementation TableViewCell
 
@@ -26,6 +27,7 @@
     if (self) {
         
         NSArray *nibArray=[[NSBundle mainBundle] loadNibNamed:@"TableViewCell" owner:self options:nil];
+
         self=[nibArray objectAtIndex:0];
     }
     return self;

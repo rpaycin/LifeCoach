@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133A18A71AE03F8B002F9F38 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */; };
+		133A18A81AE03F8B002F9F38 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */; };
 		1395B0311ADB9CC800ACFBF9 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B02C1ADB9CC800ACFBF9 /* RECommonFunctions.m */; };
 		1395B0321ADB9CC800ACFBF9 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B02E1ADB9CC800ACFBF9 /* RESideMenu.m */; };
 		1395B0331ADB9CC800ACFBF9 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0301ADB9CC800ACFBF9 /* UIViewController+RESideMenu.m */; };
@@ -48,8 +50,6 @@
 		1395B0AC1ADBA05500ACFBF9 /* SYValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0AA1ADBA05500ACFBF9 /* SYValue.m */; };
 		1395B0B11ADBA07000ACFBF9 /* SYTableCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0AE1ADBA07000ACFBF9 /* SYTableCellLabel.m */; };
 		1395B0B21ADBA07000ACFBF9 /* SYTableCellValueLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0B01ADBA07000ACFBF9 /* SYTableCellValueLabel.m */; };
-		1395B0BA1ADBA0C000ACFBF9 /* EgzersizTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0B51ADBA0C000ACFBF9 /* EgzersizTableViewCell.m */; };
-		1395B0BB1ADBA0C000ACFBF9 /* EgzersizTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1395B0B61ADBA0C000ACFBF9 /* EgzersizTableViewCell.xib */; };
 		1395B0BC1ADBA0C000ACFBF9 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0B81ADBA0C000ACFBF9 /* TableViewCell.m */; };
 		1395B0BD1ADBA0C000ACFBF9 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1395B0B91ADBA0C000ACFBF9 /* TableViewCell.xib */; };
 		1395B0CC1ADBA12200ACFBF9 /* Antreman.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0C31ADBA12200ACFBF9 /* Antreman.m */; };
@@ -77,6 +77,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		133A18A41AE03F8B002F9F38 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
+		133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
+		133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
 		1395B02B1ADB9CC800ACFBF9 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		1395B02C1ADB9CC800ACFBF9 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		1395B02D1ADB9CC800ACFBF9 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -158,9 +161,6 @@
 		1395B0AE1ADBA07000ACFBF9 /* SYTableCellLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTableCellLabel.m; sourceTree = "<group>"; };
 		1395B0AF1ADBA07000ACFBF9 /* SYTableCellValueLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTableCellValueLabel.h; sourceTree = "<group>"; };
 		1395B0B01ADBA07000ACFBF9 /* SYTableCellValueLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTableCellValueLabel.m; sourceTree = "<group>"; };
-		1395B0B41ADBA0C000ACFBF9 /* EgzersizTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EgzersizTableViewCell.h; sourceTree = "<group>"; };
-		1395B0B51ADBA0C000ACFBF9 /* EgzersizTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EgzersizTableViewCell.m; sourceTree = "<group>"; };
-		1395B0B61ADBA0C000ACFBF9 /* EgzersizTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EgzersizTableViewCell.xib; sourceTree = "<group>"; };
 		1395B0B71ADBA0C000ACFBF9 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		1395B0B81ADBA0C000ACFBF9 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		1395B0B91ADBA0C000ACFBF9 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -416,12 +416,12 @@
 		1395B0B31ADBA07C00ACFBF9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				1395B0B41ADBA0C000ACFBF9 /* EgzersizTableViewCell.h */,
-				1395B0B51ADBA0C000ACFBF9 /* EgzersizTableViewCell.m */,
-				1395B0B61ADBA0C000ACFBF9 /* EgzersizTableViewCell.xib */,
 				1395B0B71ADBA0C000ACFBF9 /* TableViewCell.h */,
 				1395B0B81ADBA0C000ACFBF9 /* TableViewCell.m */,
 				1395B0B91ADBA0C000ACFBF9 /* TableViewCell.xib */,
+				133A18A41AE03F8B002F9F38 /* ExerciseTableViewCell.h */,
+				133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */,
+				133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -596,11 +596,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1395B0BB1ADBA0C000ACFBF9 /* EgzersizTableViewCell.xib in Resources */,
 				1395B09D1ADB9F2E00ACFBF9 /* LICENSE_jsonmodel.txt in Resources */,
 				1395B0BD1ADBA0C000ACFBF9 /* TableViewCell.xib in Resources */,
 				3076CDDA1809B47200527E6C /* Images.xcassets in Resources */,
 				3076CDCC1809B47200527E6C /* InfoPlist.strings in Resources */,
+				133A18A81AE03F8B002F9F38 /* ExerciseTableViewCell.xib in Resources */,
 				3076CDD51809B47200527E6C /* Main.storyboard in Resources */,
 				1395B09F1ADB9F2E00ACFBF9 /* LICENSE in Resources */,
 			);
@@ -656,6 +656,7 @@
 				1395B09C1ADB9F2E00ACFBF9 /* JSONValueTransformer.m in Sources */,
 				1395B0CE1ADBA12200ACFBF9 /* AntremanRequest.m in Sources */,
 				1395B0941ADB9F2E00ACFBF9 /* JSONModelArray.m in Sources */,
+				133A18A71AE03F8B002F9F38 /* ExerciseTableViewCell.m in Sources */,
 				1395B0CF1ADBA12200ACFBF9 /* AntremanUye.m in Sources */,
 				1395B0A11ADB9F2E00ACFBF9 /* README.mdown in Sources */,
 				1395B0931ADB9F2E00ACFBF9 /* JSONModel.m in Sources */,
@@ -664,7 +665,6 @@
 				1395B09B1ADB9F2E00ACFBF9 /* JSONKeyMapper.m in Sources */,
 				1395B09E1ADB9F2E00ACFBF9 /* README.md in Sources */,
 				1395B08D1ADB9F2E00ACFBF9 /* AMSlideMenuMainViewController.m in Sources */,
-				1395B0BA1ADBA0C000ACFBF9 /* EgzersizTableViewCell.m in Sources */,
 				1395B0991ADB9F2E00ACFBF9 /* JSONHTTPClient.m in Sources */,
 				1395B08C1ADB9F2E00ACFBF9 /* AMSlideMenuLeftTableViewController.m in Sources */,
 				1395B0321ADB9CC800ACFBF9 /* RESideMenu.m in Sources */,

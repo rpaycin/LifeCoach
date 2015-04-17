@@ -27,7 +27,7 @@ NSArray *dene;
 }
 
 -(void)pageProperties{
-    self.view.backgroundColor=[UIColor colorWithRed:246.0f/255.0f green:246.0f/255.0f blue:246.0f/255.0f alpha:1];
+    self.view.backgroundColor=ViewBackgroundColor;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

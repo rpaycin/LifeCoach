@@ -18,6 +18,8 @@
 #define MemberID @"MemberID"
 #define MemberName @"MemberName"
 #define CompanyID @"CompanyID"
+#define ViewBackgroundColor [UIColor colorWithRed:246.0f/255.0f green:246.0f/255.0f blue:246.0f/255.0f alpha:1]
+#define FumeColor [UIColor colorWithRed:53.0f/255.0f green:52.0f/255.0f blue:58.0f/255.0f alpha:1]
 
 #define DEBUG_MODE YES
 

@@ -14,7 +14,7 @@
 #import "Antreman.h"
 #import "AntremanUye.h"
 #import "AntremanEgzersiz.h"
-#import "EgzersizTableViewCell.h"
+#import "ExerciseTableViewCell.h"
 
 @interface EgzersizViewController ()
 @property (nonatomic, retain) NSMutableArray *antEgzersizArray;
@@ -26,6 +26,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self pageProperties];
+    
+    _selectAntreman.ID=@"1";
+    //antremanlardaki egzersizler alınıyor. Şimdi antremanId yanlış geliyor. apiden düzeltilcek
     [[APIManager sharedManager] getTrainingsForMotion:_selectAntreman.ID completion:^(id trainingForMotion, NSError *error){
         if(error!=nil)
             return;
@@ -37,42 +41,41 @@
     }];
 }
 
+-(void)pageProperties{
+    _viewButtons.backgroundColor=[UIColor colorWithRed:174.0f/255.0f green:73.0f/255.0f blue:0.0f/255.0f alpha:1];
+    _egzersizTable.backgroundColor= FumeColor;
+    
+    [_egzersizTable registerNib:[UINib nibWithNibName:@"ExerciseTableViewCell" bundle:nil]  forCellReuseIdentifier:@"cellforExercise"];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"EgzersizTableViewCell";
-    EgzersizTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"cellforExercise";
+    ExerciseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        cell = [[EgzersizTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[ExerciseTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
         
     }
-    /*cell.lblAnremanBaslik.textAlignment=NSTextAlignmentLeft;
-    cell.lblAntremanAciklama.textAlignment=NSTextAlignmentLeft;
-    cell.lblAntremanGun.textAlignment=NSTextAlignmentLeft;
-    cell.lblAntremanGunBaslik.textAlignment=NSTextAlignmentLeft;*/
-    //cell.lblEgzersizAdi.text=@"Edip";
+    AntremanEgzersiz *egzersiz = (AntremanEgzersiz *) [antEgzersizArray objectAtIndex:indexPath.row];
+
+    cell.lblEgzersizAdi.text=egzersiz.Adi;
+    cell.lblSetSayisi.text=[NSString stringWithFormat:@"%d Set",egzersiz.SetSayisi];
+    cell.lblTekrarSayisi.text=[NSString stringWithFormat:@"%d Tekrar",egzersiz.TekrarSayisi];
     
-    AntremanEgzersiz *ant = (AntremanEgzersiz *) [antEgzersizArray objectAtIndex:indexPath.row];
-    
-    
-    UIImage *img;
-    
-    img= [UIImage imageNamed:@"fit"];
-    
-    
-    [cell.imgEgzersiz setImage:img];
     return cell;
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //
 {
-    return 1;//antEgzersizArray.count;
+    return antEgzersizArray.count;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

@@ -10,6 +10,7 @@
 #import "Antreman.h"
 
 @interface EgzersizViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView *viewButtons;
 
 @property (nonatomic, strong) Antreman *selectAntreman;
 @property (weak, nonatomic) IBOutlet UITableView *egzersizTable;

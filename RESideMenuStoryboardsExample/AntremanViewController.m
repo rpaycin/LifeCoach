@@ -26,6 +26,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self pageProperties];
+    
+    //antremanlar alınıyor
     BaseRequest *request=[BaseRequest new];
     request.memberID=[[HelperMethods getUserDefaults:MemberID] integerValue];
     request.companyID=[[HelperMethods getUserDefaults:CompanyID] integerValue];
@@ -36,6 +39,10 @@
         
     }];
     
+}
+
+-(void)pageProperties{
+    self.view.backgroundColor=ViewBackgroundColor;
 }
 
 - (void)didReceiveMemoryWarning {
