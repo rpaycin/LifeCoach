@@ -13,6 +13,9 @@
 
 @implementation BaseViewController
 
+- (void)viewDidLoad {
+    self.view.backgroundColor=ViewBackgroundColor;
+}
 - (void) showPopup : (NSString *) message {
     alert = [[CustomIOS7AlertView alloc] init];
     
@@ -102,5 +105,11 @@
                          [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.navigationController.view cache:NO];
                      }];
     [self.navigationController pushViewController:(UIViewController*)nextView animated:NO];
+}
+
+-(UIBarButtonItem*) prepareBackButton{
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+    barButton.title = @"Geri";
+    return barButton;
 }
 @end

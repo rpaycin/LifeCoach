@@ -28,7 +28,6 @@
     
     [self pageProperties];
     
-    _selectAntreman.ID=@"1";
     //antremanlardaki egzersizler alınıyor. Şimdi antremanId yanlış geliyor. apiden düzeltilcek
     [[APIManager sharedManager] getTrainingsForMotion:_selectAntreman.ID completion:^(id trainingForMotion, NSError *error){
         if(error!=nil)
@@ -42,7 +41,6 @@
 }
 
 -(void)pageProperties{
-    _viewButtons.backgroundColor=[UIColor colorWithRed:174.0f/255.0f green:73.0f/255.0f blue:0.0f/255.0f alpha:1];
     _egzersizTable.backgroundColor= FumeColor;
     
     [_egzersizTable registerNib:[UINib nibWithNibName:@"ExerciseTableViewCell" bundle:nil]  forCellReuseIdentifier:@"cellforExercise"];

@@ -39,7 +39,7 @@
             </objects>
             <point key="canvasLocation" x="-1841" y="-3860"/>
         </scene>
-        <!--Antreman View Controller-->
+        <!--Antreman Listesi-->
         <scene sceneID="EdP-OH-nU1">
             <objects>
                 <viewController storyboardIdentifier="antremanViewController" id="cFK-d7-kob" customClass="AntremanViewController" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AYs-eO-hYp">
+                    <navigationItem key="navigationItem" title="Antreman Listesi" id="AYs-eO-hYp">
                         <barButtonItem key="leftBarButtonItem" image="menu3line" id="KLK-S8-MsV">
                             <connections>
                                 <action selector="presentLeftMenuViewController:" destination="cFK-d7-kob" id="KE1-Ki-VlA"/>
@@ -75,7 +75,7 @@
             </objects>
             <point key="canvasLocation" x="-1010" y="-3732"/>
         </scene>
-        <!--Egzersiz View Controller-->
+        <!--Egzersizler-->
         <scene sceneID="bYU-bB-VmY">
             <objects>
                 <viewController storyboardIdentifier="egzersizViewController" id="edb-kH-FIm" customClass="EgzersizViewController" sceneMemberID="viewController">
@@ -87,22 +87,26 @@
                                 <rect key="frame" x="0.0" y="65" width="320" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egzersizBackground" id="At7-26-gBs">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lhv-xx-T4z">
-                                        <rect key="frame" x="27" y="0.0" width="67" height="58"/>
+                                        <rect key="frame" x="27" y="7" width="47" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="start">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Poe-yq-kEO">
-                                        <rect key="frame" x="131" y="0.0" width="67" height="58"/>
+                                        <rect key="frame" x="131" y="7" width="47" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="stop">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K1f-oj-Zbd">
-                                        <rect key="frame" x="237" y="0.0" width="67" height="58"/>
+                                        <rect key="frame" x="237" y="7" width="47" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="istatistik">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -123,7 +127,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UoB-b1-tIV"/>
+                    <navigationItem key="navigationItem" title="Egzersizler" id="UoB-b1-tIV"/>
                     <connections>
                         <outlet property="egzersizTable" destination="glu-vN-0VI" id="tR7-DV-Xlh"/>
                         <outlet property="viewButtons" destination="0Qu-d5-l9S" id="pb9-Aj-oFt"/>
@@ -141,106 +145,144 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MhQ-HS-PlW">
-                                <rect key="frame" x="110" y="125" width="99" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Son Yapılan Antreman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hAK-Ad-va1" customClass="SYDescriptionValue">
-                                <rect key="frame" x="62" y="243" width="194" height="21"/>
+                                <rect key="frame" x="64" y="306" width="194" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antrman Açıklama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="52I-SD-FR6" customClass="SYValue">
-                                <rect key="frame" x="112" y="272" width="95" height="25"/>
+                                <rect key="frame" x="103" y="335" width="138" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edip Akşahin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eRZ-JN-AQd" customClass="SYValue">
-                                <rect key="frame" x="9" y="174" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10-12-2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jm3-rP-baV" customClass="SYValue">
-                                <rect key="frame" x="237" y="174" width="75" height="21"/>
+                                <rect key="frame" x="203" y="80" width="101" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftalık Gözlem" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ffW-ED-y2U" customClass="SYDescriptionValue">
-                                <rect key="frame" x="96" y="408" width="127" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edip Akşahin" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eRZ-JN-AQd" customClass="SYValue">
+                                <rect key="frame" x="99" y="103" width="205" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainCenterLogo" id="xWC-wc-ZFI">
+                                <rect key="frame" x="69" y="141" width="182" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" id="Oai-1N-uyb">
-                                <rect key="frame" x="50" y="362" width="201" height="24"/>
+                                <rect key="frame" x="28" y="410" width="272" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ndf-gb-pNa">
-                                        <rect key="frame" x="7" y="1" width="20" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ndf-gb-pNa" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="0.0" y="1" width="39" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q5R-Xa-WBT">
-                                        <rect key="frame" x="33" y="1" width="20" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="1" green="0.05079100173" blue="0.069463455450000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0lz-Nt-w7L">
-                                        <rect key="frame" x="61" y="1" width="20" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pzt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wbU-MK-OzE" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="0.0" y="15" width="39" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CXI-7s-xY4">
-                                        <rect key="frame" x="118" y="1" width="20" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Yn-te-WM9" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="39" y="1" width="39" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YAG-5P-kjp">
-                                        <rect key="frame" x="145" y="1" width="20" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="chy-Of-Kq3" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="39" y="15" width="39" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M3u-N7-HHq">
-                                        <rect key="frame" x="173" y="1" width="20" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5qh-Tt-f49" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="76" y="1" width="39" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="1" green="0.05079100173" blue="0.069463455450000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XRl-Pi-1Ql">
-                                        <rect key="frame" x="90" y="1" width="20" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Çar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zaV-ZW-oPU" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="76" y="15" width="39" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="1" green="0.05079100173" blue="0.069463455450000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X5G-oy-F2g" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="115" y="1" width="39" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o2D-jE-1k2" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="115" y="15" width="39" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cXx-ai-G55" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="154" y="1" width="39" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4H2-nw-UjI" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="193" y="1" width="39" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="duU-E9-RxW" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="193" y="15" width="39" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kpq-iN-zqf" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="232" y="1" width="39" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zc5-GQ-O3u" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="232" y="15" width="39" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x6s-XX-hVA" customClass="MainHaftalikAntremanLabel">
+                                        <rect key="frame" x="154" y="15" width="39" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.41890560180000003" green="0.68690824569999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.41890560180000003" green="0.68690824569999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Life Coach" id="HIf-bS-REK">
                         <barButtonItem key="leftBarButtonItem" image="menu3line" id="SZg-Pf-I50">
@@ -250,6 +292,20 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="lblGun1" destination="ndf-gb-pNa" id="4et-8Y-fbP"/>
+                        <outlet property="lblGun1Text" destination="wbU-MK-OzE" id="4uh-u8-RsI"/>
+                        <outlet property="lblGun2" destination="0Yn-te-WM9" id="Har-21-jsU"/>
+                        <outlet property="lblGun2Text" destination="chy-Of-Kq3" id="Bxd-uD-0QY"/>
+                        <outlet property="lblGun3" destination="5qh-Tt-f49" id="CTy-P1-ZmO"/>
+                        <outlet property="lblGun3Text" destination="zaV-ZW-oPU" id="dop-9s-25u"/>
+                        <outlet property="lblGun4" destination="X5G-oy-F2g" id="dWv-Hk-88e"/>
+                        <outlet property="lblGun4Text" destination="o2D-jE-1k2" id="Dj9-Bh-3oS"/>
+                        <outlet property="lblGun5" destination="cXx-ai-G55" id="Xrv-ee-Wj1"/>
+                        <outlet property="lblGun5Text" destination="x6s-XX-hVA" id="gJ2-7W-M9Z"/>
+                        <outlet property="lblGun6" destination="4H2-nw-UjI" id="qT5-yu-eVZ"/>
+                        <outlet property="lblGun6Text" destination="duU-E9-RxW" id="2QW-uW-zLi"/>
+                        <outlet property="lblGun7" destination="kpq-iN-zqf" id="BMl-xE-osA"/>
+                        <outlet property="lblGun7Text" destination="Zc5-GQ-O3u" id="z9l-xH-bNr"/>
                         <outlet property="lblKullanici" destination="eRZ-JN-AQd" id="8Oc-ED-kCD"/>
                         <outlet property="lblTarih" destination="jm3-rP-baV" id="Poe-dp-wi3"/>
                     </connections>
@@ -333,12 +389,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="egzersizBackground" width="1589" height="329"/>
         <image name="giris" width="103" height="77"/>
         <image name="istatistik" width="217" height="210"/>
         <image name="logo" width="294" height="267"/>
+        <image name="mainCenterLogo" width="407" height="380"/>
         <image name="menu3line" width="22" height="22"/>
         <image name="start" width="178" height="211"/>
-        <image name="stop" width="178" height="211"/>
+        <image name="stop" width="47" height="52"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
