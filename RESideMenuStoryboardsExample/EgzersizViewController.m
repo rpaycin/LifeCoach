@@ -14,6 +14,7 @@
 #import "AntremanUye.h"
 #import "AntremanEgzersiz.h"
 #import "ExerciseTableViewCell.h"
+#import "MemberTrainingRequest.h"
 
 @interface EgzersizViewController ()
 @property (nonatomic, retain) NSMutableArray *antEgzersizArray;
@@ -119,6 +120,15 @@
     _btnStart.enabled=false;
     _btnFinish.enabled=true;
     _egzersizTable.userInteractionEnabled=YES;
+    
+    //ilk başlama hareketi ekleniyor
+    NSMutableArray *list=[NSMutableArray new];
+    [list addObject:@"0"];
+    MemberTrainingRequest *request=[self prepareStartFinishTrainingRequest:1 listDidExercises:list];
+    
+    [[APIManager sharedManager] addStartAndFinish:request completion:^(id result, NSError *error){
+
+    }];
 }
 
 -(void)finishExercise{
@@ -131,11 +141,17 @@
         if(cell.chkYapildimi.on)
             [listSelectedExercise addObject:cell.lblSelectedEgzersizID.text];
     }
-
+    
     //antremanları yenile ve antremanlara dön
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"FinishExercise" object:self];
-    [[self navigationController] popViewControllerAnimated:YES];
+    MemberTrainingRequest *request=[self prepareStartFinishTrainingRequest:0 listDidExercises:listSelectedExercise];
+    
+    [[APIManager sharedManager] addStartAndFinish:request completion:^(id result, NSError *error){
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"FinishExercise" object:self];
+        [[self navigationController] popViewControllerAnimated:YES];
+    }];
+
 }
+
 -(void)showMessageForTraining:(int)alertTag message:(NSString*)message{
     UIAlertView *alertTraining = [[UIAlertView alloc] initWithTitle:@"Life Coach"
                                                             message:message
@@ -144,5 +160,19 @@
                                                   otherButtonTitles:@"Hayır",nil];
     alertTraining.tag=alertTag;
     [alertTraining show];
+}
+
+-(MemberTrainingRequest*)prepareStartFinishTrainingRequest:(int)isStart listDidExercises:(NSMutableArray*)listDidExercises{
+    //request oluşturuluyor
+    MemberTrainingRequest *request=[MemberTrainingRequest new];
+    request.IsStart=isStart;
+    request.memberID=[[HelperMethods getUserDefaults:MemberID] integerValue];
+    request.companyID=[[HelperMethods getUserDefaults:CompanyID] integerValue];
+    request.TrainingID=[_selectAntreman.ID integerValue];
+    
+    if(listDidExercises!=nil)
+        request.ListDidExercises=listDidExercises;
+    
+    return request;
 }
 @end

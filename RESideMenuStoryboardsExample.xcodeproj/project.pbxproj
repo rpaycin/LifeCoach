@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131B608C1AE5A46900988BDB /* MemberTrainingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B608B1AE5A46900988BDB /* MemberTrainingRequest.m */; };
 		133A18A71AE03F8B002F9F38 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */; };
 		133A18A81AE03F8B002F9F38 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */; };
 		135701CC1AE568AB0080DD74 /* MainInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CB1AE568AB0080DD74 /* MainInformationModel.m */; };
@@ -79,6 +80,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131B608A1AE5A46900988BDB /* MemberTrainingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberTrainingRequest.h; sourceTree = "<group>"; };
+		131B608B1AE5A46900988BDB /* MemberTrainingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberTrainingRequest.m; sourceTree = "<group>"; };
 		133A18A41AE03F8B002F9F38 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
 		133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
 		133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
@@ -449,6 +452,8 @@
 				1395B0CB1ADBA12200ACFBF9 /* BaseRequest.m */,
 				135701CA1AE568AB0080DD74 /* MainInformationModel.h */,
 				135701CB1AE568AB0080DD74 /* MainInformationModel.m */,
+				131B608A1AE5A46900988BDB /* MemberTrainingRequest.h */,
+				131B608B1AE5A46900988BDB /* MemberTrainingRequest.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -662,6 +667,7 @@
 				1395B0E81ADBA29300ACFBF9 /* EgzersizViewController.m in Sources */,
 				1395B0821ADB9F2E00ACFBF9 /* AFHTTPRequestOperationManager.m in Sources */,
 				1395B0881ADB9F2E00ACFBF9 /* AFURLResponseSerialization.m in Sources */,
+				131B608C1AE5A46900988BDB /* MemberTrainingRequest.m in Sources */,
 				13FA366B1AE41AB900713C22 /* MainHaftalikAntremanLabel.m in Sources */,
 				135701D01AE578610080DD74 /* TrainingTableViewCell.m in Sources */,
 				1395B0901ADB9F2E00ACFBF9 /* UIViewController+AMSlideMenu.m in Sources */,

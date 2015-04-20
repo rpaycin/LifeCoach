@@ -9,12 +9,14 @@
 #import "Antreman.h"
 #import "AntremanEgzersiz.h"
 #import "MainInformationModel.h"
+#import "MemberTrainingRequest.h"
 
 #define LOGIN_CONTROL_URL [NSString stringWithFormat:@"/api/Sport/LoginControl"]
 #define TRAINING_MEMBER_URL [NSString stringWithFormat:@"/api/Sport/GetTrainingsForMember"]
 #define TRAINING_MOTION_URL [NSString stringWithFormat:@"/api/Sport/GetTrainingsForMotion"]
 #define TRAINING_URL [NSString stringWithFormat:@"/api/Sport/GetTrainings"]
 #define MAIN_INFORMATION [NSString stringWithFormat:@"/api/Sport/GetMainInformation"]
+#define START_AND_FINISH_URL [NSString stringWithFormat:@"/api/Sport/AddStartAndFinish"]
 
 
 @implementation APIManager
@@ -154,6 +156,21 @@
             model.TrainingWeekList= [response objectForKey:@"TrainingWeekList"];
             
             block(model,nil);
+        } else {
+            block(false,error);
+        }
+    }];
+}
+
+
+- (void) addStartAndFinish: (MemberTrainingRequest *)request completion : (void (^)(id result_array, NSError *error)) block  {
+    NSString *urlWithParams = [NSString stringWithFormat:@"%@",START_AND_FINISH_URL];
+    
+    NSString *str=request.toJSONString;
+    
+    [self postToAPI:urlWithParams withParams:request.toDictionary completion:^(id response, NSError *error) {
+        if(error == nil) {
+            block(response,nil);
         } else {
             block(false,error);
         }

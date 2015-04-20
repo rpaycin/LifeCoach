@@ -2,6 +2,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseRequest.h"
+#import "MemberTrainingRequest.h"
 
 @interface APIManager : NSObject
 
@@ -17,5 +18,7 @@
 - (void) getTrainingsForMotion: (NSString *)trainingID completion : (void (^)(id result_array, NSError *error)) block;
 
 - (void) getMainInformation: (BaseRequest *)request completion : (void (^)(id result_array, NSError *error)) block ;
+
+- (void) addStartAndFinish: (MemberTrainingRequest *)request completion : (void (^)(id result_array, NSError *error)) block ;
 @end
 
