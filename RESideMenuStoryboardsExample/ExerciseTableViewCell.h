@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblTekrarSayisi;
 @property (weak, nonatomic) IBOutlet UILabel *lblCihazNo;
 @property (weak, nonatomic) IBOutlet UISwitch *chkYapildimi;
+@property (weak, nonatomic) IBOutlet UILabel *lblSelectedEgzersizID;
 
 @end

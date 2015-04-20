@@ -27,15 +27,15 @@
     
     [self pageProperties];
     
-    //antremanlardaki egzersizler alınıyor. Şimdi antremanId yanlış geliyor. apiden düzeltilcek
+    //antremanlardaki egzersizler alınıyor.
     [[APIManager sharedManager] getTrainingsForMotion:_selectAntreman.ID completion:^(id trainingForMotion, NSError *error){
         if(error!=nil)
             return;
         
         antEgzersizArray =trainingForMotion;
-        if(antEgzersizArray.count>0)
+        if(antEgzersizArray.count>0){
             [_egzersizTable reloadData];
-        
+        }
     }];
 }
 
@@ -68,12 +68,13 @@
     cell.lblSetSayisi.text=[NSString stringWithFormat:@"%d Set",egzersiz.SetSayisi];
     cell.lblTekrarSayisi.text=[NSString stringWithFormat:@"%d Tekrar",egzersiz.TekrarSayisi];
     cell.lblCihazNo.text=[NSString stringWithFormat:@"%@ No'lu Cihaz",egzersiz.CihazNo];
+    cell.lblSelectedEgzersizID.text=[NSString stringWithFormat:@"%d",egzersiz.ID];
     
     return cell;
     
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return antEgzersizArray.count;
 }
@@ -106,17 +107,35 @@
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (alertView.tag==1 && buttonIndex == 0) {
         //başla butonu
-        _btnStart.enabled=false;
-        _btnFinish.enabled=true;
-        _egzersizTable.userInteractionEnabled=YES;
+        [self startExercise];
     }
     else if (alertView.tag==2 && buttonIndex == 0) {
         //bitir butonu
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"FinishExercise" object:self];
-        [[self navigationController] popViewControllerAnimated:YES];
+        [self finishExercise];
     }
 }
 
+-(void)startExercise{
+    _btnStart.enabled=false;
+    _btnFinish.enabled=true;
+    _egzersizTable.userInteractionEnabled=YES;
+}
+
+-(void)finishExercise{
+    //seçilmiş egzersizler
+    NSMutableArray *listSelectedExercise=[NSMutableArray new];
+    for (int i=0; i<antEgzersizArray.count;i++) {
+        NSIndexPath* indexpath = [NSIndexPath indexPathForRow:i inSection:0];
+        ExerciseTableViewCell* cell = (ExerciseTableViewCell*)[_egzersizTable cellForRowAtIndexPath:indexpath];
+        
+        if(cell.chkYapildimi.on)
+            [listSelectedExercise addObject:cell.lblSelectedEgzersizID.text];
+    }
+
+    //antremanları yenile ve antremanlara dön
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"FinishExercise" object:self];
+    [[self navigationController] popViewControllerAnimated:YES];
+}
 -(void)showMessageForTraining:(int)alertTag message:(NSString*)message{
     UIAlertView *alertTraining = [[UIAlertView alloc] initWithTitle:@"Life Coach"
                                                             message:message

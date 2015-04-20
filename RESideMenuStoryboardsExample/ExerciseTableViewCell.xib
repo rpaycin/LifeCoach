@@ -45,6 +45,12 @@
                         <rect key="frame" x="263" y="14" width="51" height="31"/>
                         <color key="onTintColor" red="0.41890560180000003" green="0.68690824569999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </switch>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hR-Il-2KE">
+                        <rect key="frame" x="282" y="53" width="30" height="9"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -52,10 +58,11 @@
                 <outlet property="imgEgzersiz" destination="KhQ-Cj-hv2" id="ThK-Nm-GPr"/>
                 <outlet property="lblCihazNo" destination="pTO-D9-4Sg" id="XV8-Ht-d9b"/>
                 <outlet property="lblEgzersizAdi" destination="52R-xy-GSn" id="G4z-zw-YZm"/>
+                <outlet property="lblSelectedEgzersizID" destination="6hR-Il-2KE" id="fUF-cH-lx2"/>
                 <outlet property="lblSetSayisi" destination="UR1-Et-7LO" id="hTX-Vv-xGE"/>
                 <outlet property="lblTekrarSayisi" destination="6cI-1u-Nlz" id="k3J-bZ-uPY"/>
             </connections>
-            <point key="canvasLocation" x="383" y="191"/>
+            <point key="canvasLocation" x="383" y="190"/>
         </tableViewCell>
     </objects>
     <resources>

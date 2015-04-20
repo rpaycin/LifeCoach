@@ -76,7 +76,7 @@
     Antreman *training = (Antreman *) [antArray objectAtIndex:indexPath.row];
     cell.lblAnremanBaslik.text=training.AntremanAdi;
     cell.lblAntremanAciklama.text=training.Aciklama;
-    cell.lblAntremanGun.text=training.ToplamYapialanAntremanSayisi;
+    cell.lblAntremanGun.text=training.ToplamYapilanAntremanSayisi;
     
     if ([training.SonYapilmaTarihi rangeOfString:@"0001"].location == NSNotFound)
         cell.lblSonYapilmaTarihi.text=training.SonYapilmaTarihi;

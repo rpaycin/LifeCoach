@@ -11,6 +11,7 @@
 #import "BaseViewController.h"
 
 @interface EgzersizViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIView *viewButtons;
 
 @property (nonatomic, strong) Antreman *selectAntreman;
