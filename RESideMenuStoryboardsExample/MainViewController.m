@@ -12,15 +12,17 @@
 #import "APIManager.h"
 #import "sporYonetim.h"
 #import "TestViewController.h"
+#import "MainInformationModel.h"
 
 
 @implementation MainViewController
 
 
 - (void)viewDidLoad {
+    //kullanıcı login mi?
     [self isLogin];
     
-    //haftanın günleri text
+    //haftanın günleri hazırlanıyor
     [self prepareDateForWeekTraining];
     
     [super viewDidLoad];
@@ -28,10 +30,30 @@
     //sayfa ayarları
     [self setPageProperties];
 
-    //test
-    [self changeWeekTraining:2];
+    //son yapılan antreman ve haftanın hangi günleri antreman yapılmış
+    [self getMainInformationFromApi];
 }
 
+-(void)getMainInformationFromApi{
+    BaseRequest *request=[BaseRequest new];
+    request.memberID=[[HelperMethods getUserDefaults:MemberID] integerValue];
+    request.companyID=[[HelperMethods getUserDefaults:CompanyID] integerValue];
+    
+    [[APIManager sharedManager] getMainInformation:request completion:^(id trainingForMember, NSError *error){
+        if(error!=nil)
+            return ;
+        
+        MainInformationModel *model=(MainInformationModel*)trainingForMember;
+        //son yapılan antreman
+        _lblSonYapilanAntreman.text=model.LastTrainingName;
+        
+        //haftanın hangi günleri antreman yapılmış
+        for (int i=0 ;i<model.TrainingWeekList.count; i++) {
+            int day=[[model.TrainingWeekList objectAtIndex:i] integerValue];
+            [self changeWeekTraining:day];
+        }
+    }];
+}
 -(void)setPageProperties{
     //Kullanıcı
     _lblKullanici.text=memberName;
@@ -62,8 +84,7 @@
 
 #pragma Haftalık Antremanlar
 -(void)changeWeekTraining:(int)i{
-    UIColor *trainingColor=[UIColor colorWithRed:39.0f/255.0f green:209.0f/255.0f blue:235.0f/255.0f alpha:1];
-    
+    UIColor *trainingColor=MainBlueColor;
     if(i==1){
         _lblGun1.backgroundColor=trainingColor;
         _lblGun1Text.backgroundColor=trainingColor;

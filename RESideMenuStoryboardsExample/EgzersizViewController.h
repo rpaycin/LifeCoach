@@ -15,5 +15,9 @@
 
 @property (nonatomic, strong) Antreman *selectAntreman;
 @property (weak, nonatomic) IBOutlet UITableView *egzersizTable;
+@property (weak, nonatomic) IBOutlet UIButton *btnStart;
+@property (weak, nonatomic) IBOutlet UIButton *btnFinish;
+- (IBAction)btnStartClick:(id)sender;
+- (IBAction)btnFinishClick:(id)sender;
 
 @end

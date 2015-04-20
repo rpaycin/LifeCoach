@@ -8,11 +8,13 @@
 #import "AntremanUye.h"
 #import "Antreman.h"
 #import "AntremanEgzersiz.h"
+#import "MainInformationModel.h"
 
 #define LOGIN_CONTROL_URL [NSString stringWithFormat:@"/api/Sport/LoginControl"]
 #define TRAINING_MEMBER_URL [NSString stringWithFormat:@"/api/Sport/GetTrainingsForMember"]
 #define TRAINING_MOTION_URL [NSString stringWithFormat:@"/api/Sport/GetTrainingsForMotion"]
 #define TRAINING_URL [NSString stringWithFormat:@"/api/Sport/GetTrainings"]
+#define MAIN_INFORMATION [NSString stringWithFormat:@"/api/Sport/GetMainInformation"]
 
 
 @implementation APIManager
@@ -142,4 +144,19 @@
     }];
 }
 
+- (void) getMainInformation: (BaseRequest *)request completion : (void (^)(id result_array, NSError *error)) block  {
+    NSString *urlWithParams = [NSString stringWithFormat:@"%@",MAIN_INFORMATION];
+    
+    [self postToAPI:urlWithParams withParams:[request prepareRequestDictionary] completion:^(id response, NSError *error) {
+        if(error == nil) {
+            MainInformationModel *model=[MainInformationModel new];
+            model.LastTrainingName= [response objectForKey:@"LastTrainingName"];
+            model.TrainingWeekList= [response objectForKey:@"TrainingWeekList"];
+            
+            block(model,nil);
+        } else {
+            block(false,error);
+        }
+    }];
+}
 @end

@@ -84,29 +84,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="0Qu-d5-l9S">
-                                <rect key="frame" x="0.0" y="65" width="320" height="58"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egzersizBackground" id="At7-26-gBs">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lhv-xx-T4z">
-                                        <rect key="frame" x="27" y="7" width="47" height="41"/>
+                                        <rect key="frame" x="33" y="8" width="34" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="start">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnStartClick:" destination="edb-kH-FIm" eventType="touchUpInside" id="MjN-0K-zHy"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Poe-yq-kEO">
-                                        <rect key="frame" x="131" y="7" width="47" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Poe-yq-kEO">
+                                        <rect key="frame" x="144" y="8" width="32" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="stop">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnFinishClick:" destination="edb-kH-FIm" eventType="touchUpInside" id="B2k-ao-4Zn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K1f-oj-Zbd">
-                                        <rect key="frame" x="237" y="7" width="47" height="41"/>
+                                        <rect key="frame" x="249" y="8" width="34" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="istatistik">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,7 +118,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="glu-vN-0VI">
-                                <rect key="frame" x="0.0" y="122" width="320" height="446"/>
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -129,6 +131,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Egzersizler" id="UoB-b1-tIV"/>
                     <connections>
+                        <outlet property="btnFinish" destination="Poe-yq-kEO" id="CYu-HZ-wMF"/>
+                        <outlet property="btnStart" destination="Lhv-xx-T4z" id="lvg-hQ-RjI"/>
                         <outlet property="egzersizTable" destination="glu-vN-0VI" id="tR7-DV-Xlh"/>
                         <outlet property="viewButtons" destination="0Qu-d5-l9S" id="pb9-Aj-oFt"/>
                     </connections>
@@ -149,13 +153,6 @@
                                 <rect key="frame" x="64" y="306" width="194" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antrman Açıklama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="52I-SD-FR6" customClass="SYValue">
-                                <rect key="frame" x="103" y="335" width="138" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -282,6 +279,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antreman Yok" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="52I-SD-FR6" customClass="SYValue">
+                                <rect key="frame" x="93" y="335" width="138" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" title="Life Coach" id="HIf-bS-REK">
@@ -307,6 +311,7 @@
                         <outlet property="lblGun7" destination="kpq-iN-zqf" id="BMl-xE-osA"/>
                         <outlet property="lblGun7Text" destination="Zc5-GQ-O3u" id="z9l-xH-bNr"/>
                         <outlet property="lblKullanici" destination="eRZ-JN-AQd" id="8Oc-ED-kCD"/>
+                        <outlet property="lblSonYapilanAntreman" destination="52I-SD-FR6" id="DbW-L0-GUX"/>
                         <outlet property="lblTarih" destination="jm3-rP-baV" id="Poe-dp-wi3"/>
                     </connections>
                 </viewController>
@@ -389,14 +394,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="egzersizBackground" width="1589" height="329"/>
         <image name="giris" width="103" height="77"/>
         <image name="istatistik" width="217" height="210"/>
         <image name="logo" width="294" height="267"/>
         <image name="mainCenterLogo" width="407" height="380"/>
         <image name="menu3line" width="22" height="22"/>
         <image name="start" width="178" height="211"/>
-        <image name="stop" width="47" height="52"/>
+        <image name="stop" width="433" height="497"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

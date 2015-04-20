@@ -24,6 +24,8 @@
 #define LightBlack [UIColor colorWithRed:71.0f/255.0f green:81.0f/255.0f blue:91.0f/255.0f alpha:1]
 #define DarkBlack [UIColor colorWithRed:57.0f/255.0f green:57.0f/255.0f blue:59.0f/255.0f alpha:1]
 
+#define MainBlueColor [UIColor colorWithRed:0.0f/255.0f green:159.0f/255.0f blue:215.0f/255.0f alpha:1]
+
 #define DEBUG_MODE YES
 
 #define DEFAULT_SERVER_ADDRESS @"http://85.153.58.170/sporyonetimi_webapi"

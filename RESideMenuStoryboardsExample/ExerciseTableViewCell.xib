@@ -15,35 +15,47 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sinav" translatesAutoresizingMaskIntoConstraints="NO" id="KhQ-Cj-hv2">
-                        <rect key="frame" x="14" y="7" width="79" height="48"/>
+                        <rect key="frame" x="11" y="14" width="47" height="38"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 Set" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR1-Et-7LO">
-                        <rect key="frame" x="108" y="34" width="66" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <rect key="frame" x="67" y="35" width="50" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12 Tekrar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cI-1u-Nlz">
-                        <rect key="frame" x="185" y="34" width="68" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <rect key="frame" x="125" y="35" width="50" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Şınav" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52R-xy-GSn">
-                        <rect key="frame" x="108" y="8" width="179" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <rect key="frame" x="67" y="8" width="179" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12 Tekrar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTO-D9-4Sg">
+                        <rect key="frame" x="181" y="37" width="75" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X0o-z8-kCG">
+                        <rect key="frame" x="263" y="14" width="51" height="31"/>
+                        <color key="onTintColor" red="0.41890560180000003" green="0.68690824569999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </switch>
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="chkYapildimi" destination="X0o-z8-kCG" id="Nhz-Sw-zXu"/>
                 <outlet property="imgEgzersiz" destination="KhQ-Cj-hv2" id="ThK-Nm-GPr"/>
+                <outlet property="lblCihazNo" destination="pTO-D9-4Sg" id="XV8-Ht-d9b"/>
                 <outlet property="lblEgzersizAdi" destination="52R-xy-GSn" id="G4z-zw-YZm"/>
                 <outlet property="lblSetSayisi" destination="UR1-Et-7LO" id="hTX-Vv-xGE"/>
                 <outlet property="lblTekrarSayisi" destination="6cI-1u-Nlz" id="k3J-bZ-uPY"/>
             </connections>
-            <point key="canvasLocation" x="383" y="196"/>
+            <point key="canvasLocation" x="383" y="191"/>
         </tableViewCell>
     </objects>
     <resources>

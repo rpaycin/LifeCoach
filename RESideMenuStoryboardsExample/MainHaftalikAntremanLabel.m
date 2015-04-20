@@ -18,7 +18,7 @@
 }
 
 -(void)makeSettings{
-    self.backgroundColor=[UIColor colorWithRed:71.0f/255.0f green:81.0f/255.0f blue:91.0f/255.0f alpha:1];
+    self.backgroundColor=[UIColor colorWithRed:30.0f/255.0f green:31.0f/255.0f blue:25.0f/255.0f alpha:1];
     self.textColor = [UIColor colorWithRed:246.0f/255.0f green:246.0f/255.0f blue:246.0f/255.0f alpha:1];
 }
 

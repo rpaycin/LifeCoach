@@ -7,7 +7,6 @@
 //
 
 #import "EgzersizViewController.h"
-#import "TableViewCell.h"
 #import "HelperMethods.h"
 #import "sporYonetim.h"
 #import "APIManager.h"
@@ -41,7 +40,9 @@
 }
 
 -(void)pageProperties{
+    _viewButtons.backgroundColor=MainBlueColor;
     _egzersizTable.backgroundColor= FumeColor;
+    _egzersizTable.userInteractionEnabled=NO;
     
     [_egzersizTable registerNib:[UINib nibWithNibName:@"ExerciseTableViewCell" bundle:nil]  forCellReuseIdentifier:@"cellforExercise"];
     
@@ -66,6 +67,7 @@
     cell.lblEgzersizAdi.text=egzersiz.Adi;
     cell.lblSetSayisi.text=[NSString stringWithFormat:@"%d Set",egzersiz.SetSayisi];
     cell.lblTekrarSayisi.text=[NSString stringWithFormat:@"%d Tekrar",egzersiz.TekrarSayisi];
+    cell.lblCihazNo.text=[NSString stringWithFormat:@"%@ No'lu Cihaz",egzersiz.CihazNo];
     
     return cell;
     
@@ -93,4 +95,35 @@
     return nil;
 }
 
+- (IBAction)btnStartClick:(id)sender {
+    [self showMessageForTraining:1 message:@"Antremana başlamak istediğinize emin misiniz?"];
+}
+
+- (IBAction)btnFinishClick:(id)sender {
+    [self showMessageForTraining:2 message:@"Antremana bitirmek istediğinize emin misiniz?"];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (alertView.tag==1 && buttonIndex == 0) {
+        //başla butonu
+        _btnStart.enabled=false;
+        _btnFinish.enabled=true;
+        _egzersizTable.userInteractionEnabled=YES;
+    }
+    else if (alertView.tag==2 && buttonIndex == 0) {
+        //bitir butonu
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"FinishExercise" object:self];
+        [[self navigationController] popViewControllerAnimated:YES];
+    }
+}
+
+-(void)showMessageForTraining:(int)alertTag message:(NSString*)message{
+    UIAlertView *alertTraining = [[UIAlertView alloc] initWithTitle:@"Life Coach"
+                                                            message:message
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Evet"
+                                                  otherButtonTitles:@"Hayır",nil];
+    alertTraining.tag=alertTag;
+    [alertTraining show];
+}
 @end

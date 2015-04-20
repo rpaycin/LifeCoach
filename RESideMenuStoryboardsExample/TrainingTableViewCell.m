@@ -1,19 +1,16 @@
 //
-//  ExerciseTableViewCell.m
+//  TrainingTableViewCell.m
 //  RESideMenuStoryboardsExample
 //
-//  Created by Obase Bilgisayar on 16/04/15.
+//  Created by Obase Bilgisayar on 20/04/15.
 //  Copyright (c) 2015 Roman Efimov. All rights reserved.
 //
 
-#import "ExerciseTableViewCell.h"
-#import "sporYonetim.h"
+#import "TrainingTableViewCell.h"
 
-@implementation ExerciseTableViewCell
+@implementation TrainingTableViewCell
 
 - (void)awakeFromNib {
-    self.backgroundColor= FumeColor;
-    [self.chkYapildimi setOnTintColor:MainBlueColor];
     // Initialization code
 }
 

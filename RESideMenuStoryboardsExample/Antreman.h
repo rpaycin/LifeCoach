@@ -14,4 +14,6 @@
 @property (nonatomic, copy) NSString<Optional> *AntremanAdi;
 @property (nonatomic, copy) NSString<Optional> *AntremanGunSayisi;
 @property (nonatomic, copy) NSString<Optional> *Aciklama;
+@property (nonatomic, copy) NSString<Optional> *ToplamYapialanAntremanSayisi;
+@property (nonatomic, copy) NSString<Optional> *SonYapilmaTarihi;
 @end

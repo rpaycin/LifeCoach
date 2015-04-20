@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		133A18A71AE03F8B002F9F38 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */; };
 		133A18A81AE03F8B002F9F38 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */; };
+		135701CC1AE568AB0080DD74 /* MainInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CB1AE568AB0080DD74 /* MainInformationModel.m */; };
+		135701D01AE578610080DD74 /* TrainingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CE1AE578610080DD74 /* TrainingTableViewCell.m */; };
+		135701D11AE578610080DD74 /* TrainingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135701CF1AE578610080DD74 /* TrainingTableViewCell.xib */; };
 		1395B0311ADB9CC800ACFBF9 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B02C1ADB9CC800ACFBF9 /* RECommonFunctions.m */; };
 		1395B0321ADB9CC800ACFBF9 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B02E1ADB9CC800ACFBF9 /* RESideMenu.m */; };
 		1395B0331ADB9CC800ACFBF9 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0301ADB9CC800ACFBF9 /* UIViewController+RESideMenu.m */; };
@@ -50,8 +53,6 @@
 		1395B0AC1ADBA05500ACFBF9 /* SYValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0AA1ADBA05500ACFBF9 /* SYValue.m */; };
 		1395B0B11ADBA07000ACFBF9 /* SYTableCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0AE1ADBA07000ACFBF9 /* SYTableCellLabel.m */; };
 		1395B0B21ADBA07000ACFBF9 /* SYTableCellValueLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0B01ADBA07000ACFBF9 /* SYTableCellValueLabel.m */; };
-		1395B0BC1ADBA0C000ACFBF9 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0B81ADBA0C000ACFBF9 /* TableViewCell.m */; };
-		1395B0BD1ADBA0C000ACFBF9 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1395B0B91ADBA0C000ACFBF9 /* TableViewCell.xib */; };
 		1395B0CC1ADBA12200ACFBF9 /* Antreman.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0C31ADBA12200ACFBF9 /* Antreman.m */; };
 		1395B0CD1ADBA12200ACFBF9 /* AntremanEgzersiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0C51ADBA12200ACFBF9 /* AntremanEgzersiz.m */; };
 		1395B0CE1ADBA12200ACFBF9 /* AntremanRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0C71ADBA12200ACFBF9 /* AntremanRequest.m */; };
@@ -81,6 +82,11 @@
 		133A18A41AE03F8B002F9F38 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
 		133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
 		133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
+		135701CA1AE568AB0080DD74 /* MainInformationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInformationModel.h; sourceTree = "<group>"; };
+		135701CB1AE568AB0080DD74 /* MainInformationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainInformationModel.m; sourceTree = "<group>"; };
+		135701CD1AE578610080DD74 /* TrainingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingTableViewCell.h; sourceTree = "<group>"; };
+		135701CE1AE578610080DD74 /* TrainingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingTableViewCell.m; sourceTree = "<group>"; };
+		135701CF1AE578610080DD74 /* TrainingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingTableViewCell.xib; sourceTree = "<group>"; };
 		1395B02B1ADB9CC800ACFBF9 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		1395B02C1ADB9CC800ACFBF9 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		1395B02D1ADB9CC800ACFBF9 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -162,9 +168,6 @@
 		1395B0AE1ADBA07000ACFBF9 /* SYTableCellLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTableCellLabel.m; sourceTree = "<group>"; };
 		1395B0AF1ADBA07000ACFBF9 /* SYTableCellValueLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTableCellValueLabel.h; sourceTree = "<group>"; };
 		1395B0B01ADBA07000ACFBF9 /* SYTableCellValueLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTableCellValueLabel.m; sourceTree = "<group>"; };
-		1395B0B71ADBA0C000ACFBF9 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		1395B0B81ADBA0C000ACFBF9 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		1395B0B91ADBA0C000ACFBF9 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		1395B0C21ADBA12200ACFBF9 /* Antreman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Antreman.h; sourceTree = "<group>"; };
 		1395B0C31ADBA12200ACFBF9 /* Antreman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Antreman.m; sourceTree = "<group>"; };
 		1395B0C41ADBA12200ACFBF9 /* AntremanEgzersiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AntremanEgzersiz.h; sourceTree = "<group>"; };
@@ -421,12 +424,12 @@
 		1395B0B31ADBA07C00ACFBF9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				1395B0B71ADBA0C000ACFBF9 /* TableViewCell.h */,
-				1395B0B81ADBA0C000ACFBF9 /* TableViewCell.m */,
-				1395B0B91ADBA0C000ACFBF9 /* TableViewCell.xib */,
 				133A18A41AE03F8B002F9F38 /* ExerciseTableViewCell.h */,
 				133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */,
 				133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */,
+				135701CD1AE578610080DD74 /* TrainingTableViewCell.h */,
+				135701CE1AE578610080DD74 /* TrainingTableViewCell.m */,
+				135701CF1AE578610080DD74 /* TrainingTableViewCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -444,6 +447,8 @@
 				1395B0C91ADBA12200ACFBF9 /* AntremanUye.m */,
 				1395B0CA1ADBA12200ACFBF9 /* BaseRequest.h */,
 				1395B0CB1ADBA12200ACFBF9 /* BaseRequest.m */,
+				135701CA1AE568AB0080DD74 /* MainInformationModel.h */,
+				135701CB1AE568AB0080DD74 /* MainInformationModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -602,7 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1395B09D1ADB9F2E00ACFBF9 /* LICENSE_jsonmodel.txt in Resources */,
-				1395B0BD1ADBA0C000ACFBF9 /* TableViewCell.xib in Resources */,
+				135701D11AE578610080DD74 /* TrainingTableViewCell.xib in Resources */,
 				3076CDDA1809B47200527E6C /* Images.xcassets in Resources */,
 				3076CDCC1809B47200527E6C /* InfoPlist.strings in Resources */,
 				133A18A81AE03F8B002F9F38 /* ExerciseTableViewCell.xib in Resources */,
@@ -628,9 +633,9 @@
 				1395B0841ADB9F2E00ACFBF9 /* AFNetworkReachabilityManager.m in Sources */,
 				1395B0D91ADBA24300ACFBF9 /* LoginViewController.m in Sources */,
 				1395B0861ADB9F2E00ACFBF9 /* AFURLConnectionOperation.m in Sources */,
-				1395B0BC1ADBA0C000ACFBF9 /* TableViewCell.m in Sources */,
 				1395B0B11ADBA07000ACFBF9 /* SYTableCellLabel.m in Sources */,
 				1395B0811ADB9F2E00ACFBF9 /* AFHTTPRequestOperation.m in Sources */,
+				135701CC1AE568AB0080DD74 /* MainInformationModel.m in Sources */,
 				1395B08A1ADB9F2E00ACFBF9 /* AMSlideMenuContentSegue.m in Sources */,
 				1395B0961ADB9F2E00ACFBF9 /* JSONModelError.m in Sources */,
 				1395B0831ADB9F2E00ACFBF9 /* AFHTTPSessionManager.m in Sources */,
@@ -658,6 +663,7 @@
 				1395B0821ADB9F2E00ACFBF9 /* AFHTTPRequestOperationManager.m in Sources */,
 				1395B0881ADB9F2E00ACFBF9 /* AFURLResponseSerialization.m in Sources */,
 				13FA366B1AE41AB900713C22 /* MainHaftalikAntremanLabel.m in Sources */,
+				135701D01AE578610080DD74 /* TrainingTableViewCell.m in Sources */,
 				1395B0901ADB9F2E00ACFBF9 /* UIViewController+AMSlideMenu.m in Sources */,
 				1395B09C1ADB9F2E00ACFBF9 /* JSONValueTransformer.m in Sources */,
 				1395B0CE1ADBA12200ACFBF9 /* AntremanRequest.m in Sources */,

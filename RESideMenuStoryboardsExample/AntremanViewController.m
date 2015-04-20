@@ -7,7 +7,7 @@
 //
 
 #import "AntremanViewController.h"
-#import "TableViewCell.h"
+#import "TrainingTableViewCell.h"
 #import "HelperMethods.h"
 #import "sporYonetim.h"
 #import "APIManager.h"
@@ -26,7 +26,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //sayfa ayarları
+    [self pageProperties];
+    
     //antremanlar alınıyor
+    [self getTrainings];
+}
+
+-(void)getTrainings{
     BaseRequest *request=[BaseRequest new];
     request.memberID=[[HelperMethods getUserDefaults:MemberID] integerValue];
     request.companyID=[[HelperMethods getUserDefaults:CompanyID] integerValue];
@@ -36,33 +43,43 @@
         [_antremanTableView reloadData];
         
     }];
-    
+}
+-(void)pageProperties{
+    [_antremanTableView registerNib:[UINib nibWithNibName:@"TrainingTableViewCell" bundle:nil]  forCellReuseIdentifier:@"cellforTraining"];
+
+    //egzersizler bittiği zaman
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(finishExercise:)
+                                                 name:@"FinishExercise"
+                                               object:nil];
 }
 
-
+- (void) finishExercise:(NSNotification *) notification
+{
+    [self getTrainings];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"TableViewCell";
-    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"cellforTraining";
+    TrainingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[TrainingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
         
     }
-    cell.lblAnremanBaslik.textAlignment=NSTextAlignmentLeft;
-    cell.lblAntremanAciklama.textAlignment=NSTextAlignmentLeft;
-    cell.lblAntremanGun.textAlignment=NSTextAlignmentLeft;
-    cell.lblAntremanGunBaslik.textAlignment=NSTextAlignmentLeft;
     
-    Antreman *ant = (Antreman *) [antArray objectAtIndex:indexPath.row];
-    cell.lblAnremanBaslik.text=ant.AntremanAdi;
-    cell.lblAntremanAciklama.text=ant.Aciklama;
-    cell.lblAntremanGun.text=ant.AntremanGunSayisi;
+    Antreman *training = (Antreman *) [antArray objectAtIndex:indexPath.row];
+    cell.lblAnremanBaslik.text=training.AntremanAdi;
+    cell.lblAntremanAciklama.text=training.Aciklama;
+    cell.lblAntremanGun.text=training.ToplamYapialanAntremanSayisi;
+    
+    if ([training.SonYapilmaTarihi rangeOfString:@"0001"].location == NSNotFound)
+        cell.lblSonYapilmaTarihi.text=training.SonYapilmaTarihi;
     
     [cell.img setImage:[UIImage imageNamed:@"fit"]];
     return cell;
@@ -80,15 +97,7 @@
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return  88;
-}
-
-- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-   return 0.0;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return nil;
+    return  97;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,8 +111,5 @@
                          [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.navigationController.view cache:NO];
                      }];
     [self.navigationController pushViewController:(UIViewController*)egzersiz animated:NO];
-    
 }
-
-
 @end

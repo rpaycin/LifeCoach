@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblSetSayisi;
 @property (weak, nonatomic) IBOutlet UILabel *lblEgzersizAdi;
 @property (weak, nonatomic) IBOutlet UILabel *lblTekrarSayisi;
+@property (weak, nonatomic) IBOutlet UILabel *lblCihazNo;
+@property (weak, nonatomic) IBOutlet UISwitch *chkYapildimi;
 
 @end

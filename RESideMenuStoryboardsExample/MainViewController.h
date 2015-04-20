@@ -34,6 +34,7 @@
 @property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun6Text;
 @property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun7;
 @property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun7Text;
+@property (weak, nonatomic) IBOutlet SYValue *lblSonYapilanAntreman;
 
 
 - (IBAction)btnTestClick:(id)sender;
