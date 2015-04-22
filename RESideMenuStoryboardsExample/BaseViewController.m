@@ -32,16 +32,18 @@
 - (UIView *)createDemoView:(NSString*)text
 {
     demoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 110)];
-    
-    UILabel *lblHeader=[[UILabel alloc]initWithFrame:CGRectMake(100, 18, 150, 27)];
-    lblHeader.text=@"Spor Yönetimi";
+
+    UILabel *lblHeader=[[UILabel alloc]initWithFrame:CGRectMake(0, 18, 300, 27)];
+    lblHeader.text=@"Life Coach";
+    lblHeader.adjustsFontSizeToFitWidth = YES;
     lblHeader.tag=34;
-    lblHeader.font=[UIFont fontWithName:@"HelveticaNeue-Medium" size:18.0];
+    lblHeader.textAlignment = NSTextAlignmentCenter;
+    lblHeader.font=[UIFont fontWithName:@"HelveticaNeue-Medium" size:14.0];
     
     
     UILabel *lbl= [[UILabel alloc] initWithFrame:CGRectMake(9, 48, 284, 21)];
     lbl.tag=35;
-    lbl.font=[UIFont fontWithName:@"HelveticaNeue-Medium" size:14.0];
+    lbl.font=[UIFont fontWithName:@"HelveticaNeue-Medium" size:10.0];
     lbl.textAlignment = NSTextAlignmentCenter;
     lbl.text=text;
     lbl.minimumScaleFactor=.2f;

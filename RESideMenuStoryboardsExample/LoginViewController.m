@@ -22,7 +22,7 @@ NSArray *dene;
     [self pageProperties];
     
     [self observeKeyboard];
-    _txtEmail.text=@"rpaycin@gmail.com";
+    _txtEmail.text=@"edipaksahin@gmail.com";
     _txtPassword.text=@"1234";
 }
 

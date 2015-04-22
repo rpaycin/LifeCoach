@@ -15,6 +15,7 @@
 #import "AntremanEgzersiz.h"
 #import "ExerciseTableViewCell.h"
 #import "MemberTrainingRequest.h"
+#import "ExerciseIDModel.h"
 
 @interface EgzersizViewController ()
 @property (nonatomic, retain) NSMutableArray *antEgzersizArray;
@@ -43,7 +44,6 @@
 -(void)pageProperties{
     _viewButtons.backgroundColor=MainBlueColor;
     _egzersizTable.backgroundColor= FumeColor;
-    _egzersizTable.userInteractionEnabled=NO;
     
     [_egzersizTable registerNib:[UINib nibWithNibName:@"ExerciseTableViewCell" bundle:nil]  forCellReuseIdentifier:@"cellforExercise"];
     
@@ -119,16 +119,16 @@
 -(void)startExercise{
     _btnStart.enabled=false;
     _btnFinish.enabled=true;
-    _egzersizTable.userInteractionEnabled=YES;
     
     //ilk başlama hareketi ekleniyor
     NSMutableArray *list=[NSMutableArray new];
     [list addObject:@"0"];
     MemberTrainingRequest *request=[self prepareStartFinishTrainingRequest:1 listDidExercises:list];
-    
+
     [[APIManager sharedManager] addStartAndFinish:request completion:^(id result, NSError *error){
 
     }];
+
 }
 
 -(void)finishExercise{
@@ -138,10 +138,13 @@
         NSIndexPath* indexpath = [NSIndexPath indexPathForRow:i inSection:0];
         ExerciseTableViewCell* cell = (ExerciseTableViewCell*)[_egzersizTable cellForRowAtIndexPath:indexpath];
         
-        if(cell.chkYapildimi.on)
-            [listSelectedExercise addObject:cell.lblSelectedEgzersizID.text];
+        if(cell.chkYapildimi.on){
+            ExerciseIDModel *model=[ExerciseIDModel new];
+            model.ExerciseID=cell.lblSelectedEgzersizID.text;
+            [listSelectedExercise addObject:model];
+        }
+        
     }
-    
     //antremanları yenile ve antremanlara dön
     MemberTrainingRequest *request=[self prepareStartFinishTrainingRequest:0 listDidExercises:listSelectedExercise];
     

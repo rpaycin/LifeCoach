@@ -10,6 +10,7 @@
 		131B608C1AE5A46900988BDB /* MemberTrainingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B608B1AE5A46900988BDB /* MemberTrainingRequest.m */; };
 		133A18A71AE03F8B002F9F38 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */; };
 		133A18A81AE03F8B002F9F38 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */; };
+		1351CBCA1AE76DF900AEA455 /* ExerciseIDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351CBC91AE76DF900AEA455 /* ExerciseIDModel.m */; };
 		135701CC1AE568AB0080DD74 /* MainInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CB1AE568AB0080DD74 /* MainInformationModel.m */; };
 		135701D01AE578610080DD74 /* TrainingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CE1AE578610080DD74 /* TrainingTableViewCell.m */; };
 		135701D11AE578610080DD74 /* TrainingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135701CF1AE578610080DD74 /* TrainingTableViewCell.xib */; };
@@ -85,6 +86,8 @@
 		133A18A41AE03F8B002F9F38 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
 		133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
 		133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
+		1351CBC81AE76DF900AEA455 /* ExerciseIDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseIDModel.h; sourceTree = "<group>"; };
+		1351CBC91AE76DF900AEA455 /* ExerciseIDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseIDModel.m; sourceTree = "<group>"; };
 		135701CA1AE568AB0080DD74 /* MainInformationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInformationModel.h; sourceTree = "<group>"; };
 		135701CB1AE568AB0080DD74 /* MainInformationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainInformationModel.m; sourceTree = "<group>"; };
 		135701CD1AE578610080DD74 /* TrainingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingTableViewCell.h; sourceTree = "<group>"; };
@@ -454,6 +457,8 @@
 				135701CB1AE568AB0080DD74 /* MainInformationModel.m */,
 				131B608A1AE5A46900988BDB /* MemberTrainingRequest.h */,
 				131B608B1AE5A46900988BDB /* MemberTrainingRequest.m */,
+				1351CBC81AE76DF900AEA455 /* ExerciseIDModel.h */,
+				1351CBC91AE76DF900AEA455 /* ExerciseIDModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -673,6 +678,7 @@
 				1395B0901ADB9F2E00ACFBF9 /* UIViewController+AMSlideMenu.m in Sources */,
 				1395B09C1ADB9F2E00ACFBF9 /* JSONValueTransformer.m in Sources */,
 				1395B0CE1ADBA12200ACFBF9 /* AntremanRequest.m in Sources */,
+				1351CBCA1AE76DF900AEA455 /* ExerciseIDModel.m in Sources */,
 				1395B0941ADB9F2E00ACFBF9 /* JSONModelArray.m in Sources */,
 				133A18A71AE03F8B002F9F38 /* ExerciseTableViewCell.m in Sources */,
 				1395B0CF1ADBA12200ACFBF9 /* AntremanUye.m in Sources */,

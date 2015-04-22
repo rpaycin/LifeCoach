@@ -108,7 +108,7 @@
         if(error == nil) {
             [HelperMethods saveUserDefaults:MemberID andValue:[response objectForKey:@"ID"]];
             [HelperMethods saveUserDefaults:MemberName andValue:[response objectForKey:@"Name"]];
-            [HelperMethods saveUserDefaults:CompanyID andValue:[response objectForKey:@"FirmaID"]];
+            [HelperMethods saveUserDefaults:CompanyID andValue:[response objectForKey:@"CompanyID"]];
             
             block(response,nil);
         } else {
