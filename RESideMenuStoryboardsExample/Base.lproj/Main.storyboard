@@ -174,111 +174,6 @@
                                 <rect key="frame" x="69" y="141" width="182" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" id="Oai-1N-uyb">
-                                <rect key="frame" x="28" y="410" width="272" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ndf-gb-pNa" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="0.0" y="1" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pzt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wbU-MK-OzE" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="0.0" y="15" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Yn-te-WM9" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="39" y="1" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="chy-Of-Kq3" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="39" y="15" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5qh-Tt-f49" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="76" y="1" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Çar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zaV-ZW-oPU" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="76" y="15" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X5G-oy-F2g" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="115" y="1" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o2D-jE-1k2" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="115" y="15" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cXx-ai-G55" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="154" y="1" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4H2-nw-UjI" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="193" y="1" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="duU-E9-RxW" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="193" y="15" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kpq-iN-zqf" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="232" y="1" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zc5-GQ-O3u" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="232" y="15" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x6s-XX-hVA" customClass="MainHaftalikAntremanLabel">
-                                        <rect key="frame" x="154" y="15" width="39" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.341605239" green="0.62336482559999995" blue="0.10093287400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antreman Yok" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="52I-SD-FR6" customClass="SYValue">
                                 <rect key="frame" x="93" y="335" width="138" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -286,6 +181,153 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" id="Oai-1N-uyb">
+                                <rect key="frame" x="26" y="410" width="272" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8JN-mP-eCh" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="0.0" y="15" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Pzt">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="YWq-GW-0Hu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ijd-qA-nLl" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="20.04">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="esR-Hf-XXA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="112" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j2N-aC-cWN" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="39" y="15" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Sal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="Uff-NE-nfB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XF4-KP-SaN" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="39" y="0.0" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="20.04">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="mEe-Z3-aT5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="113" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0sh-7d-lRd" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="78" y="15" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Çar">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="mZg-jq-pzs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8iz-DQ-dLr" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="78" y="0.0" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="20.04">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="9Z3-FR-ajN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="115" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kVV-UL-Yss" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="117" y="15" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Per">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="ut3-JG-Q1k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZbB-tv-9iv" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="117" y="0.0" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="20.04">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="u9B-lZ-Elz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="115" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gzD-FA-XxX" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="156" y="15" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cum">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="xml-aI-RIu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ppf-Jf-pdj" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="156" y="0.0" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="20.04">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="ZyE-tg-cOA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="116" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Yf-CJ-hCv" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="195" y="15" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cts">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="FrG-dg-Brh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jOg-wJ-qvw" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="195" y="0.0" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="20.04">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="K4o-2N-Wqt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sj1-qc-es0" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="234" y="0.0" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="20.04">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="VqE-sp-pAN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="117" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uit-YU-9gj" customClass="MainHaftalikAntremanButton">
+                                        <rect key="frame" x="234" y="15" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Pazar">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWeeklyTrainingClick:" destination="jsP-Dz-DYG" eventType="touchUpInside" id="oLw-F6-dzn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" title="Life Coach" id="HIf-bS-REK">
@@ -296,20 +338,20 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="lblGun1" destination="ndf-gb-pNa" id="4et-8Y-fbP"/>
-                        <outlet property="lblGun1Text" destination="wbU-MK-OzE" id="4uh-u8-RsI"/>
-                        <outlet property="lblGun2" destination="0Yn-te-WM9" id="Har-21-jsU"/>
-                        <outlet property="lblGun2Text" destination="chy-Of-Kq3" id="Bxd-uD-0QY"/>
-                        <outlet property="lblGun3" destination="5qh-Tt-f49" id="CTy-P1-ZmO"/>
-                        <outlet property="lblGun3Text" destination="zaV-ZW-oPU" id="dop-9s-25u"/>
-                        <outlet property="lblGun4" destination="X5G-oy-F2g" id="dWv-Hk-88e"/>
-                        <outlet property="lblGun4Text" destination="o2D-jE-1k2" id="Dj9-Bh-3oS"/>
-                        <outlet property="lblGun5" destination="cXx-ai-G55" id="Xrv-ee-Wj1"/>
-                        <outlet property="lblGun5Text" destination="x6s-XX-hVA" id="gJ2-7W-M9Z"/>
-                        <outlet property="lblGun6" destination="4H2-nw-UjI" id="qT5-yu-eVZ"/>
-                        <outlet property="lblGun6Text" destination="duU-E9-RxW" id="2QW-uW-zLi"/>
-                        <outlet property="lblGun7" destination="kpq-iN-zqf" id="BMl-xE-osA"/>
-                        <outlet property="lblGun7Text" destination="Zc5-GQ-O3u" id="z9l-xH-bNr"/>
+                        <outlet property="btnGun1" destination="ijd-qA-nLl" id="mAg-Nz-Zcj"/>
+                        <outlet property="btnGun1Text" destination="8JN-mP-eCh" id="TJY-sv-dey"/>
+                        <outlet property="btnGun2" destination="XF4-KP-SaN" id="Zio-ks-BJR"/>
+                        <outlet property="btnGun2Text" destination="j2N-aC-cWN" id="DIa-9i-ti5"/>
+                        <outlet property="btnGun3" destination="8iz-DQ-dLr" id="Dgh-UC-jQg"/>
+                        <outlet property="btnGun3Text" destination="0sh-7d-lRd" id="zqo-Aq-vez"/>
+                        <outlet property="btnGun4" destination="ZbB-tv-9iv" id="QFK-Wl-mNm"/>
+                        <outlet property="btnGun4Text" destination="kVV-UL-Yss" id="znK-C7-Z9f"/>
+                        <outlet property="btnGun5" destination="ppf-Jf-pdj" id="Ww8-Ma-ZTO"/>
+                        <outlet property="btnGun5Text" destination="gzD-FA-XxX" id="dQu-LI-Uzy"/>
+                        <outlet property="btnGun6" destination="jOg-wJ-qvw" id="0kX-kR-4xM"/>
+                        <outlet property="btnGun6Text" destination="2Yf-CJ-hCv" id="eQP-qx-98a"/>
+                        <outlet property="btnGun7" destination="Sj1-qc-es0" id="emo-bQ-sao"/>
+                        <outlet property="btnGun7Text" destination="Uit-YU-9gj" id="OpA-fL-yUn"/>
                         <outlet property="lblKullanici" destination="eRZ-JN-AQd" id="8Oc-ED-kCD"/>
                         <outlet property="lblSonYapilanAntreman" destination="52I-SD-FR6" id="DbW-L0-GUX"/>
                         <outlet property="lblTarih" destination="jm3-rP-baV" id="Poe-dp-wi3"/>

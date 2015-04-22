@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 #import "SYValue.h"
-#import "MainHaftalikAntremanLabel.h"
+#import "MainHaftalikAntremanButton.h"
 
 @interface MainViewController : BaseViewController{
     NSString *memberID;
@@ -20,21 +20,23 @@
 @property (weak, nonatomic) IBOutlet SYValue *lblKullanici;
 @property (weak, nonatomic) IBOutlet SYValue *lblTarih;
 @property (weak, nonatomic) IBOutlet SYValue *lblAntremanAciklama;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun1;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun1Text;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun2;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun2Text;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun3;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun3Text;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun4;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun4Text;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun5;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun5Text;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun6;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun6Text;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun7;
-@property (weak, nonatomic) IBOutlet MainHaftalikAntremanLabel *lblGun7Text;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun1;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun1Text;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun2;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun2Text;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun3;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun3Text;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun4;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun4Text;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun5;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun5Text;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun6;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun6Text;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun7;
+@property (weak, nonatomic) IBOutlet MainHaftalikAntremanButton *btnGun7Text;
 @property (weak, nonatomic) IBOutlet SYValue *lblSonYapilanAntreman;
+
+- (IBAction)btnWeeklyTrainingClick:(id)sender;
 
 
 - (IBAction)btnTestClick:(id)sender;

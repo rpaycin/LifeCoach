@@ -13,7 +13,8 @@
 #import "sporYonetim.h"
 #import "TestViewController.h"
 #import "MainInformationModel.h"
-
+#import "CMPopTipView.h"
+#import "CMPopView.h"
 
 @implementation MainViewController
 
@@ -86,32 +87,32 @@
 -(void)changeWeekTraining:(int)i{
     UIColor *trainingColor=MainBlueColor;
     if(i==1){
-        _lblGun1.backgroundColor=trainingColor;
-        _lblGun1Text.backgroundColor=trainingColor;
+        _btnGun1.backgroundColor=trainingColor;
+        _btnGun1Text.backgroundColor=trainingColor;
     }
     else if(i==2){
-        _lblGun2.backgroundColor=trainingColor;
-        _lblGun2Text.backgroundColor=trainingColor;
+        _btnGun2.backgroundColor=trainingColor;
+        _btnGun2Text.backgroundColor=trainingColor;
     }
     else if(i==3){
-        _lblGun3.backgroundColor=trainingColor;
-        _lblGun3Text.backgroundColor=trainingColor;
+        _btnGun3.backgroundColor=trainingColor;
+        _btnGun3Text.backgroundColor=trainingColor;
     }
     else if(i==4){
-        _lblGun4.backgroundColor=trainingColor;
-        _lblGun4Text.backgroundColor=trainingColor;
+        _btnGun4.backgroundColor=trainingColor;
+        _btnGun4Text.backgroundColor=trainingColor;
     }
     else if(i==5){
-        _lblGun5.backgroundColor=trainingColor;
-        _lblGun5Text.backgroundColor=trainingColor;
+        _btnGun5.backgroundColor=trainingColor;
+        _btnGun5Text.backgroundColor=trainingColor;
     }
     else if(i==6){
-        _lblGun6.backgroundColor=trainingColor;
-        _lblGun6Text.backgroundColor=trainingColor;
+        _btnGun6.backgroundColor=trainingColor;
+        _btnGun6Text.backgroundColor=trainingColor;
     }
     else if(i==7){
-        _lblGun7.backgroundColor=trainingColor;
-        _lblGun7Text.backgroundColor=trainingColor;
+        _btnGun7.backgroundColor=trainingColor;
+        _btnGun7Text.backgroundColor=trainingColor;
     }
 }
 
@@ -142,20 +143,52 @@
         NSString *dateText=[NSString stringWithFormat:@"%@.%@",day,month];
         
         if(i==0)
-            _lblGun1.text=dateText;
+            [_btnGun1 setTitle:dateText forState:UIControlStateNormal];
         else if(i==1)
-            _lblGun2.text=dateText;
+            [_btnGun2 setTitle:dateText forState:UIControlStateNormal];
         else if(i==2)
-            _lblGun3.text=dateText;
+            [_btnGun3 setTitle:dateText forState:UIControlStateNormal];
         else if(i==3)
-            _lblGun4.text=dateText;
+            [_btnGun4 setTitle:dateText forState:UIControlStateNormal];
         else if(i==4)
-            _lblGun5.text=dateText;
+            [_btnGun5 setTitle:dateText forState:UIControlStateNormal];
         else if(i==5)
-            _lblGun6.text=dateText;
+            [_btnGun6 setTitle:dateText forState:UIControlStateNormal];
         else if(i==6)
-            _lblGun7.text=dateText;
+            [_btnGun7 setTitle:dateText forState:UIControlStateNormal];
     }
 }
+
+ 
+
+- (IBAction)btnWeeklyTrainingClick:(id)sender {
+    CMPopView *contentView=[[CMPopView alloc]initWithFrame:CGRectMake(0, 0, 300, 120)];
+    contentView.lblBaslik.text=@"test";
+    CMPopTipView *popTipView=[[CMPopTipView alloc] initWithCustomView:contentView];
+    
+    
+    popTipView.delegate = self;
+    [popTipView setBackgroundColor: MainBlueColor];
+    [popTipView setBorderColor:MainBlueColor];
+    
+    popTipView.hasGradientBackground = NO;
+    popTipView.cornerRadius = 0;
+    
+    popTipView.hasShadow = NO;
+    
+    
+    popTipView.animation = 1;
+    popTipView.has3DStyle = false;
+    
+    popTipView.dismissTapAnywhere = YES;
+    [popTipView autoDismissAnimated:YES atTimeInterval:10.0];
+    
+    [popTipView presentPointingAtView:sender inView:self.view animated:YES];
+}
+
+- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView
+{
+}
 #pragma Haftalık Antremanlar Bitti
+
 @end

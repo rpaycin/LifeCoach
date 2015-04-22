@@ -10,6 +10,10 @@
 		131B608C1AE5A46900988BDB /* MemberTrainingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B608B1AE5A46900988BDB /* MemberTrainingRequest.m */; };
 		133A18A71AE03F8B002F9F38 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */; };
 		133A18A81AE03F8B002F9F38 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */; };
+		134F98821AE8152100CD8454 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F98811AE8152100CD8454 /* CMPopTipView.m */; };
+		134F98851AE8168800CD8454 /* MainHaftalikAntremanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F98841AE8168800CD8454 /* MainHaftalikAntremanButton.m */; };
+		134F98881AE8190000CD8454 /* CMPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F98871AE8190000CD8454 /* CMPopView.m */; };
+		134F988A1AE8190A00CD8454 /* CMPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 134F98891AE8190A00CD8454 /* CMPopView.xib */; };
 		1351CBCA1AE76DF900AEA455 /* ExerciseIDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351CBC91AE76DF900AEA455 /* ExerciseIDModel.m */; };
 		135701CC1AE568AB0080DD74 /* MainInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CB1AE568AB0080DD74 /* MainInformationModel.m */; };
 		135701D01AE578610080DD74 /* TrainingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CE1AE578610080DD74 /* TrainingTableViewCell.m */; };
@@ -67,7 +71,6 @@
 		1395B0E21ADBA27000ACFBF9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0DF1ADBA27000ACFBF9 /* TestViewController.m */; };
 		1395B0E71ADBA29300ACFBF9 /* AntremanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0E41ADBA29300ACFBF9 /* AntremanViewController.m */; };
 		1395B0E81ADBA29300ACFBF9 /* EgzersizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0E61ADBA29300ACFBF9 /* EgzersizViewController.m */; };
-		13FA366B1AE41AB900713C22 /* MainHaftalikAntremanLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FA366A1AE41AB900713C22 /* MainHaftalikAntremanLabel.m */; };
 		3076CDC21809B47200527E6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC11809B47200527E6C /* Foundation.framework */; };
 		3076CDC41809B47200527E6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC31809B47200527E6C /* CoreGraphics.framework */; };
 		3076CDC61809B47200527E6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC51809B47200527E6C /* UIKit.framework */; };
@@ -86,6 +89,13 @@
 		133A18A41AE03F8B002F9F38 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
 		133A18A51AE03F8B002F9F38 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
 		133A18A61AE03F8B002F9F38 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
+		134F98801AE8152100CD8454 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		134F98811AE8152100CD8454 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
+		134F98831AE8168800CD8454 /* MainHaftalikAntremanButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHaftalikAntremanButton.h; sourceTree = "<group>"; };
+		134F98841AE8168800CD8454 /* MainHaftalikAntremanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHaftalikAntremanButton.m; sourceTree = "<group>"; };
+		134F98861AE8190000CD8454 /* CMPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopView.h; sourceTree = "<group>"; };
+		134F98871AE8190000CD8454 /* CMPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopView.m; sourceTree = "<group>"; };
+		134F98891AE8190A00CD8454 /* CMPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMPopView.xib; sourceTree = "<group>"; };
 		1351CBC81AE76DF900AEA455 /* ExerciseIDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseIDModel.h; sourceTree = "<group>"; };
 		1351CBC91AE76DF900AEA455 /* ExerciseIDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseIDModel.m; sourceTree = "<group>"; };
 		135701CA1AE568AB0080DD74 /* MainInformationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInformationModel.h; sourceTree = "<group>"; };
@@ -199,8 +209,6 @@
 		1395B0E51ADBA29300ACFBF9 /* EgzersizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EgzersizViewController.h; sourceTree = "<group>"; };
 		1395B0E61ADBA29300ACFBF9 /* EgzersizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EgzersizViewController.m; sourceTree = "<group>"; };
 		1395B0E91ADBA38500ACFBF9 /* sporYonetim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sporYonetim.h; sourceTree = "<group>"; };
-		13FA36691AE41AB900713C22 /* MainHaftalikAntremanLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHaftalikAntremanLabel.h; sourceTree = "<group>"; };
-		13FA366A1AE41AB900713C22 /* MainHaftalikAntremanLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHaftalikAntremanLabel.m; sourceTree = "<group>"; };
 		3076CDBE1809B47200527E6C /* LifeCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3076CDC11809B47200527E6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3076CDC31809B47200527E6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -234,6 +242,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		134F987F1AE814FD00CD8454 /* CMPopTipView */ = {
+			isa = PBXGroup;
+			children = (
+				134F98801AE8152100CD8454 /* CMPopTipView.h */,
+				134F98811AE8152100CD8454 /* CMPopTipView.m */,
+				134F98861AE8190000CD8454 /* CMPopView.h */,
+				134F98871AE8190000CD8454 /* CMPopView.m */,
+				134F98891AE8190A00CD8454 /* CMPopView.xib */,
+			);
+			name = CMPopTipView;
+			sourceTree = "<group>";
+		};
 		1395B02A1ADB9CC800ACFBF9 /* RESideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +271,7 @@
 		1395B0341ADB9F2E00ACFBF9 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				134F987F1AE814FD00CD8454 /* CMPopTipView */,
 				1395B02A1ADB9CC800ACFBF9 /* RESideMenu */,
 				1395B0351ADB9F2E00ACFBF9 /* AFNetworking */,
 				1395B0491ADB9F2E00ACFBF9 /* AMSlideMenu */,
@@ -412,8 +433,8 @@
 				1395B0A81ADBA05500ACFBF9 /* SYDescriptionValue.m */,
 				1395B0A91ADBA05500ACFBF9 /* SYValue.h */,
 				1395B0AA1ADBA05500ACFBF9 /* SYValue.m */,
-				13FA36691AE41AB900713C22 /* MainHaftalikAntremanLabel.h */,
-				13FA366A1AE41AB900713C22 /* MainHaftalikAntremanLabel.m */,
+				134F98831AE8168800CD8454 /* MainHaftalikAntremanButton.h */,
+				134F98841AE8168800CD8454 /* MainHaftalikAntremanButton.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -616,6 +637,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				134F988A1AE8190A00CD8454 /* CMPopView.xib in Resources */,
 				1395B09D1ADB9F2E00ACFBF9 /* LICENSE_jsonmodel.txt in Resources */,
 				135701D11AE578610080DD74 /* TrainingTableViewCell.xib in Resources */,
 				3076CDDA1809B47200527E6C /* Images.xcassets in Resources */,
@@ -633,6 +655,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				134F98881AE8190000CD8454 /* CMPopView.m in Sources */,
 				1395B0911ADB9F2E00ACFBF9 /* CustomIOS7AlertView.m in Sources */,
 				1395B0AC1ADBA05500ACFBF9 /* SYValue.m in Sources */,
 				1395B0851ADB9F2E00ACFBF9 /* AFSecurityPolicy.m in Sources */,
@@ -673,7 +696,7 @@
 				1395B0821ADB9F2E00ACFBF9 /* AFHTTPRequestOperationManager.m in Sources */,
 				1395B0881ADB9F2E00ACFBF9 /* AFURLResponseSerialization.m in Sources */,
 				131B608C1AE5A46900988BDB /* MemberTrainingRequest.m in Sources */,
-				13FA366B1AE41AB900713C22 /* MainHaftalikAntremanLabel.m in Sources */,
+				134F98851AE8168800CD8454 /* MainHaftalikAntremanButton.m in Sources */,
 				135701D01AE578610080DD74 /* TrainingTableViewCell.m in Sources */,
 				1395B0901ADB9F2E00ACFBF9 /* UIViewController+AMSlideMenu.m in Sources */,
 				1395B09C1ADB9F2E00ACFBF9 /* JSONValueTransformer.m in Sources */,
@@ -691,6 +714,7 @@
 				1395B08D1ADB9F2E00ACFBF9 /* AMSlideMenuMainViewController.m in Sources */,
 				1395B0991ADB9F2E00ACFBF9 /* JSONHTTPClient.m in Sources */,
 				1395B08C1ADB9F2E00ACFBF9 /* AMSlideMenuLeftTableViewController.m in Sources */,
+				134F98821AE8152100CD8454 /* CMPopTipView.m in Sources */,
 				1395B0321ADB9CC800ACFBF9 /* RESideMenu.m in Sources */,
 				1395B0B21ADBA07000ACFBF9 /* SYTableCellValueLabel.m in Sources */,
 				1395B0311ADB9CC800ACFBF9 /* RECommonFunctions.m in Sources */,
