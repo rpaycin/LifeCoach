@@ -71,6 +71,7 @@
     cell.lblCihazNo.text=[NSString stringWithFormat:@"%@ No'lu Cihaz",egzersiz.CihazNo];
     cell.lblSelectedEgzersizID.text=[NSString stringWithFormat:@"%d",egzersiz.ID];
     
+    [cell.imgEgzersiz setImage:[UIImage imageNamed:egzersiz.KasGrubuImgText]];
     return cell;
     
 }
