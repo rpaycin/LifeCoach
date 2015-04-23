@@ -15,6 +15,8 @@
 #import "MainInformationModel.h"
 #import "CMPopTipView.h"
 #import "CMPopView.h"
+#import "GetTrainingForSelectedDateRequest.h"
+#import "GetTrainingForSelectedDateResponse.h"
 
 @implementation MainViewController
 
@@ -162,10 +164,43 @@
  
 
 - (IBAction)btnWeeklyTrainingClick:(id)sender {
-    CMPopView *contentView=[[CMPopView alloc]initWithFrame:CGRectMake(0, 0, 300, 120)];
-    contentView.lblBaslik.text=@"test";
-    CMPopTipView *popTipView=[[CMPopTipView alloc] initWithCustomView:contentView];
+    int tag=((UIButton*)sender).tag;
+    int selectedDay=(tag>110)?tag-110:tag-100;
+    selectedDay=selectedDay-1;
     
+    GetTrainingForSelectedDateRequest *request=[GetTrainingForSelectedDateRequest new];
+    request.memberID=[memberID integerValue];
+    request.companyID=[companyID integerValue];
+    request.selectedDay=selectedDay;
+    
+    [[APIManager sharedManager] getTrainingForSelectedDate:request completion:^(id trainings, NSError *error){
+        if(error!=nil || trainings==nil)
+            return ;
+        
+        NSMutableArray *listTraining=(NSMutableArray*)trainings;
+        if(listTraining.count==0)
+            return;
+        
+        CMPopView *contentView=[[CMPopView alloc]initWithFrame:CGRectMake(0, 0, 300, 120)];
+        
+        int counter=0;
+        for (GetTrainingForSelectedDateResponse *training in listTraining) {
+            int y=counter*21;
+            UILabel* lblTraining=[[UILabel alloc]initWithFrame:CGRectMake(0, y, 292, 21)];
+            lblTraining.text=[NSString stringWithFormat:@"%@ - %@",training.AntremanAdi,training.AntremanSuresi];
+            lblTraining.textColor=[UIColor blackColor];
+            [lblTraining setFont:[UIFont systemFontOfSize:12]];
+            
+            [contentView.viewAntremanListesi addSubview:lblTraining];
+            
+            counter++;
+        }
+        [self showPopupForTraining:contentView sender:sender];
+    }];
+}
+
+-(void) showPopupForTraining:(CMPopView*)contentView sender:(id)sender {
+    CMPopTipView *popTipView=[[CMPopTipView alloc] initWithCustomView:contentView];
     
     popTipView.delegate = self;
     [popTipView setBackgroundColor: MainBlueColor];
@@ -185,7 +220,6 @@
     
     [popTipView presentPointingAtView:sender inView:self.view animated:YES];
 }
-
 - (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView
 {
 }

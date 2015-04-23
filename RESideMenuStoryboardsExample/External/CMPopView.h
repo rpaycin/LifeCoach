@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CMPopView : UIView
-@property (weak, nonatomic) IBOutlet UILabel *lblBaslik;
-@property (weak, nonatomic) IBOutlet UILabel *lblIcerik;
+@property (weak, nonatomic) IBOutlet UIView *viewAntremanListesi;
 
 @end

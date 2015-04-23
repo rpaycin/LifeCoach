@@ -71,6 +71,8 @@
 		1395B0E21ADBA27000ACFBF9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0DF1ADBA27000ACFBF9 /* TestViewController.m */; };
 		1395B0E71ADBA29300ACFBF9 /* AntremanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0E41ADBA29300ACFBF9 /* AntremanViewController.m */; };
 		1395B0E81ADBA29300ACFBF9 /* EgzersizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0E61ADBA29300ACFBF9 /* EgzersizViewController.m */; };
+		13A9A68D1AE98E84001E6960 /* GetTrainingForSelectedDateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A9A68C1AE98E84001E6960 /* GetTrainingForSelectedDateRequest.m */; };
+		13A9A6901AE98ED5001E6960 /* GetTrainingForSelectedDateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A9A68F1AE98ED5001E6960 /* GetTrainingForSelectedDateResponse.m */; };
 		3076CDC21809B47200527E6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC11809B47200527E6C /* Foundation.framework */; };
 		3076CDC41809B47200527E6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC31809B47200527E6C /* CoreGraphics.framework */; };
 		3076CDC61809B47200527E6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC51809B47200527E6C /* UIKit.framework */; };
@@ -209,6 +211,10 @@
 		1395B0E51ADBA29300ACFBF9 /* EgzersizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EgzersizViewController.h; sourceTree = "<group>"; };
 		1395B0E61ADBA29300ACFBF9 /* EgzersizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EgzersizViewController.m; sourceTree = "<group>"; };
 		1395B0E91ADBA38500ACFBF9 /* sporYonetim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sporYonetim.h; sourceTree = "<group>"; };
+		13A9A68B1AE98E84001E6960 /* GetTrainingForSelectedDateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTrainingForSelectedDateRequest.h; sourceTree = "<group>"; };
+		13A9A68C1AE98E84001E6960 /* GetTrainingForSelectedDateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTrainingForSelectedDateRequest.m; sourceTree = "<group>"; };
+		13A9A68E1AE98ED5001E6960 /* GetTrainingForSelectedDateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTrainingForSelectedDateResponse.h; sourceTree = "<group>"; };
+		13A9A68F1AE98ED5001E6960 /* GetTrainingForSelectedDateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTrainingForSelectedDateResponse.m; sourceTree = "<group>"; };
 		3076CDBE1809B47200527E6C /* LifeCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3076CDC11809B47200527E6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3076CDC31809B47200527E6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -480,6 +486,10 @@
 				131B608B1AE5A46900988BDB /* MemberTrainingRequest.m */,
 				1351CBC81AE76DF900AEA455 /* ExerciseIDModel.h */,
 				1351CBC91AE76DF900AEA455 /* ExerciseIDModel.m */,
+				13A9A68B1AE98E84001E6960 /* GetTrainingForSelectedDateRequest.h */,
+				13A9A68C1AE98E84001E6960 /* GetTrainingForSelectedDateRequest.m */,
+				13A9A68E1AE98ED5001E6960 /* GetTrainingForSelectedDateResponse.h */,
+				13A9A68F1AE98ED5001E6960 /* GetTrainingForSelectedDateResponse.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -680,6 +690,7 @@
 				1395B0E71ADBA29300ACFBF9 /* AntremanViewController.m in Sources */,
 				1395B0E21ADBA27000ACFBF9 /* TestViewController.m in Sources */,
 				1395B0CD1ADBA12200ACFBF9 /* AntremanEgzersiz.m in Sources */,
+				13A9A68D1AE98E84001E6960 /* GetTrainingForSelectedDateRequest.m in Sources */,
 				1395B08E1ADB9F2E00ACFBF9 /* AMSlideMenuRightMenuSegue.m in Sources */,
 				1395B0D01ADBA12200ACFBF9 /* BaseRequest.m in Sources */,
 				1395B0E11ADBA27000ACFBF9 /* MainViewController.m in Sources */,
@@ -690,6 +701,7 @@
 				1395B0951ADB9F2E00ACFBF9 /* JSONModelClassProperty.m in Sources */,
 				1395B0AB1ADBA05500ACFBF9 /* SYDescriptionValue.m in Sources */,
 				1395B0981ADB9F2E00ACFBF9 /* JSONAPI.m in Sources */,
+				13A9A6901AE98ED5001E6960 /* GetTrainingForSelectedDateResponse.m in Sources */,
 				1395B0A01ADB9F2E00ACFBF9 /* MBProgressHUD.m in Sources */,
 				1395B0E01ADBA27000ACFBF9 /* BaseViewController.m in Sources */,
 				1395B0E81ADBA29300ACFBF9 /* EgzersizViewController.m in Sources */,

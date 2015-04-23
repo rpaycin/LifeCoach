@@ -10,6 +10,8 @@
 #import "AntremanEgzersiz.h"
 #import "MainInformationModel.h"
 #import "MemberTrainingRequest.h"
+#import "GetTrainingForSelectedDateRequest.h"
+#import "GetTrainingForSelectedDateResponse.h"
 
 #define LOGIN_CONTROL_URL [NSString stringWithFormat:@"/api/Sport/LoginControl"]
 #define TRAINING_MEMBER_URL [NSString stringWithFormat:@"/api/Sport/GetTrainingsForMember"]
@@ -17,6 +19,7 @@
 #define TRAINING_URL [NSString stringWithFormat:@"/api/Sport/GetTrainings"]
 #define MAIN_INFORMATION [NSString stringWithFormat:@"/api/Sport/GetMainInformation"]
 #define START_AND_FINISH_URL [NSString stringWithFormat:@"/api/Sport/AddStartAndFinish"]
+#define TRAINING_FOR_SELECTEDDATE [NSString stringWithFormat:@"/api/Sport/GetTrainingForSelectedDate"]
 
 
 @implementation APIManager
@@ -176,4 +179,19 @@
         }
     }];
 }
+
+- (void) getTrainingForSelectedDate: (GetTrainingForSelectedDateRequest *)request completion : (void (^)(id result_array, NSError *error)) block  {
+    NSString *urlWithParams = [NSString stringWithFormat:@"%@",TRAINING_FOR_SELECTEDDATE];
+
+    
+    [self postToAPI:urlWithParams withParams:request.toDictionary completion:^(id response, NSError *error) {
+        if(error == nil) {
+            id results= [self convertArray:[response objectForKey:@"List"] toClass:[GetTrainingForSelectedDateResponse class]];
+            block(results,nil);
+        } else {
+            block(false,error);
+        }
+    }];
+}
+
 @end
