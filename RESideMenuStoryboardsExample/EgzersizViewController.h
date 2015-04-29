@@ -11,7 +11,16 @@
 #import "BaseViewController.h"
 
 @interface EgzersizViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
-
+{
+    NSMutableArray *listKol;
+    NSMutableArray *listGogus;
+    NSMutableArray *listBacak;
+    NSMutableArray *listOmuz;
+    NSMutableArray *listSirt;
+    NSMutableArray *listKarin;
+    NSMutableArray *listCardio;
+    NSMutableArray *listFull;
+}
 @property (weak, nonatomic) IBOutlet UIView *viewButtons;
 
 @property (nonatomic, strong) Antreman *selectAntreman;

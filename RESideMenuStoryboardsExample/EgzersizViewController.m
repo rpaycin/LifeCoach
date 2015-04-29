@@ -30,17 +30,77 @@
     [self pageProperties];
     
     //antremanlardaki egzersizler alınıyor.
+    [self getExercisesFromTraining];
+   
+}
+
+-(void)getExercisesFromTraining{
+    listBacak=[NSMutableArray new];
+    listCardio=[NSMutableArray new];
+    listGogus=[NSMutableArray new];
+    listKarin=[NSMutableArray new];
+    listKol=[NSMutableArray new];
+    listOmuz=[NSMutableArray new];
+    listSirt=[NSMutableArray new];
+    listFull=[NSMutableArray new];
+    
     [[APIManager sharedManager] getTrainingsForMotion:_selectAntreman.ID completion:^(id trainingForMotion, NSError *error){
         if(error!=nil)
             return;
         
         antEgzersizArray =trainingForMotion;
+        
         if(antEgzersizArray.count>0){
+            for (AntremanEgzersiz *exercise in antEgzersizArray) {
+                if(exercise.KasNumarasi==1)
+                    [listKol addObject:exercise];
+                if(exercise.KasNumarasi==2)
+                    [listGogus addObject:exercise];
+                if(exercise.KasNumarasi==3)
+                    [listBacak addObject:exercise];
+                if(exercise.KasNumarasi==4)
+                    [listOmuz addObject:exercise];
+                if(exercise.KasNumarasi==5)
+                    [listSirt addObject:exercise];
+                if(exercise.KasNumarasi==6)
+                    [listKarin addObject:exercise];
+                if(exercise.KasNumarasi==7)
+                    [listCardio addObject:exercise];
+            }
+            
+            if(listKol.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listKol forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listGogus.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listGogus forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listBacak.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listBacak forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listOmuz.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listOmuz forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listSirt.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listSirt forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listKarin.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listKarin forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listCardio.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listCardio forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            
             [_egzersizTable reloadData];
         }
     }];
 }
-
 -(void)pageProperties{
     _viewButtons.backgroundColor=MainBlueColor;
     _egzersizTable.backgroundColor= FumeColor;
@@ -54,6 +114,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma UITableView Delegates
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return listFull.count;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"cellforExercise";
     ExerciseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -63,7 +128,9 @@
         [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
         
     }
-    AntremanEgzersiz *egzersiz = (AntremanEgzersiz *) [antEgzersizArray objectAtIndex:indexPath.row];
+    NSDictionary *dictionary = [listFull objectAtIndex:indexPath.section];
+    NSArray *list = [dictionary objectForKey:@"data"];
+    AntremanEgzersiz *egzersiz = [list objectAtIndex:indexPath.row];
 
     cell.lblEgzersizAdi.text=egzersiz.Adi;
     cell.lblSetSayisi.text=[NSString stringWithFormat:@"%d Set",egzersiz.SetSayisi];
@@ -78,26 +145,39 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return antEgzersizArray.count;
-}
-
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
+    NSDictionary *dictionary = [listFull objectAtIndex:section];
+    NSArray *list = [dictionary objectForKey:@"data"];
+    return list.count;
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return  60;
 }
 
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] ;
+    
+    //header text
+    NSDictionary *dictionary = [listFull objectAtIndex:section];
+    NSArray *list = [dictionary objectForKey:@"data"];
+    AntremanEgzersiz *firstExercise = (AntremanEgzersiz*)[list objectAtIndex:0];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width - 10, 18)] ;
+    label.text = firstExercise.KasGrubu;
+    label.textColor = ViewBackgroundColor;
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor clearColor];
+    [headerView addSubview:label];
+    
+    return headerView;
+}
+
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.0;
+    return 30.0;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return nil;
-}
-
+#pragma UITableView Delegates Bitti
 - (IBAction)btnStartClick:(id)sender {
     [self showMessageForTraining:1 message:@"Antremana başlamak istediğinize emin misiniz?"];
 }
