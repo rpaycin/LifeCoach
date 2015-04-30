@@ -33,11 +33,12 @@
                     <connections>
                         <segue destination="jsP-Dz-DYG" kind="relationship" relationship="rootViewController" id="LUF-1Q-jf3"/>
                         <segue destination="cFK-d7-kob" kind="push" id="Jf8-Hq-UJF"/>
+                        <segue destination="sLi-ux-ht2" kind="push" id="F2D-mK-heS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzD-df-7on" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1841" y="-3859.9999999999991"/>
+            <point key="canvasLocation" x="-2145" y="-3564"/>
         </scene>
         <!--Antreman Listesi-->
         <scene sceneID="EdP-OH-nU1">
@@ -75,6 +76,37 @@
             </objects>
             <point key="canvasLocation" x="-1010" y="-3732"/>
         </scene>
+        <!--İstatistikler-->
+        <scene sceneID="P1t-7F-vte">
+            <objects>
+                <viewController storyboardIdentifier="grafikViewController" id="sLi-ux-ht2" customClass="GrafikViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kx0-Hs-iOY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="XWx-zh-0qD" customClass="XYPieChart">
+                                <rect key="frame" x="16" y="95" width="278" height="251"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="İstatistikler" id="OUf-uV-7kI">
+                        <barButtonItem key="leftBarButtonItem" image="menu3line" id="H9y-Is-i9S">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="sLi-ux-ht2" id="0yP-gR-TZw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pieChart" destination="XWx-zh-0qD" id="oFo-mX-sTZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AXZ-i1-8vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1010" y="-3013"/>
+        </scene>
         <!--Egzersizler-->
         <scene sceneID="bYU-bB-VmY">
             <objects>
@@ -87,18 +119,8 @@
                                 <rect key="frame" x="0.0" y="65" width="320" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lhv-xx-T4z">
-                                        <rect key="frame" x="33" y="8" width="34" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="start">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btnStartClick:" destination="edb-kH-FIm" eventType="touchUpInside" id="MjN-0K-zHy"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Poe-yq-kEO">
-                                        <rect key="frame" x="144" y="8" width="32" height="27"/>
+                                        <rect key="frame" x="195" y="8" width="32" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="stop">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,19 +129,22 @@
                                             <action selector="btnFinishClick:" destination="edb-kH-FIm" eventType="touchUpInside" id="B2k-ao-4Zn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K1f-oj-Zbd">
-                                        <rect key="frame" x="249" y="8" width="34" height="27"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lhv-xx-T4z">
+                                        <rect key="frame" x="80" y="8" width="34" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="istatistik">
+                                        <state key="normal" image="start">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnStartClick:" destination="edb-kH-FIm" eventType="touchUpInside" id="MjN-0K-zHy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="glu-vN-0VI">
                                 <rect key="frame" x="0.0" y="108" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="edb-kH-FIm" id="jTV-cY-SBy"/>
@@ -433,7 +458,6 @@
     </scenes>
     <resources>
         <image name="giris" width="103" height="77"/>
-        <image name="istatistik" width="217" height="210"/>
         <image name="logo" width="294" height="267"/>
         <image name="mainCenterLogo" width="407" height="380"/>
         <image name="menu3line" width="22" height="22"/>

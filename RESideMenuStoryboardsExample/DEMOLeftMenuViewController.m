@@ -56,6 +56,11 @@
         [self.sideMenuViewController hideMenuViewController];
     }
     else if(indexPath.row==2){
+        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"grafikViewController"]]
+                                                     animated:YES];
+        [self.sideMenuViewController hideMenuViewController];
+    }
+    else if(indexPath.row==3){
         [HelperMethods removeUserDefaults:MemberID];
         [HelperMethods removeUserDefaults:CompanyID];
         [self.sideMenuViewController hideMenuViewController];
@@ -82,7 +87,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -100,8 +105,8 @@
         cell.selectedBackgroundView = [[UIView alloc] init];
     }
     
-    NSArray *titles = @[@"Anasayfa", @"Antreman", @"Çıkış Yap"];
-    NSArray *images = @[@"IconHome", @"IconCalendar",  @"IconEmpty"];
+    NSArray *titles = @[@"Anasayfa", @"Antreman",@"Istatistikler", @"Çıkış Yap"];
+    NSArray *images = @[@"IconHome", @"IconCalendar",@"IconProfile",  @"IconEmpty"];
     cell.textLabel.text = titles[indexPath.row];
     cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
     

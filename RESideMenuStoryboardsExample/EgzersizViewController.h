@@ -12,13 +12,19 @@
 
 @interface EgzersizViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 {
-    NSMutableArray *listKol;
+    NSMutableArray *listBiceps;
     NSMutableArray *listGogus;
-    NSMutableArray *listBacak;
     NSMutableArray *listOmuz;
     NSMutableArray *listSirt;
     NSMutableArray *listKarin;
     NSMutableArray *listCardio;
+    NSMutableArray *listKanat;
+    NSMutableArray *listBaldir;
+    NSMutableArray *listOnKol;
+    NSMutableArray *listOnBacak;
+    NSMutableArray *listTriceps;
+    NSMutableArray *listArkaBacak;
+    NSMutableArray *listTrapezius;
     NSMutableArray *listFull;
 }
 @property (weak, nonatomic) IBOutlet UIView *viewButtons;

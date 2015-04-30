@@ -35,13 +35,20 @@
 }
 
 -(void)getExercisesFromTraining{
-    listBacak=[NSMutableArray new];
-    listCardio=[NSMutableArray new];
+    listBiceps=[NSMutableArray new];
     listGogus=[NSMutableArray new];
-    listKarin=[NSMutableArray new];
-    listKol=[NSMutableArray new];
     listOmuz=[NSMutableArray new];
     listSirt=[NSMutableArray new];
+    listKarin=[NSMutableArray new];
+    listCardio=[NSMutableArray new];
+    listKanat=[NSMutableArray new];
+    listBaldir=[NSMutableArray new];
+    listOnKol=[NSMutableArray new];
+    listOnBacak=[NSMutableArray new];
+    listTriceps=[NSMutableArray new];
+    listArkaBacak=[NSMutableArray new];
+    listTrapezius=[NSMutableArray new];
+    
     listFull=[NSMutableArray new];
     
     [[APIManager sharedManager] getTrainingsForMotion:_selectAntreman.ID completion:^(id trainingForMotion, NSError *error){
@@ -53,31 +60,39 @@
         if(antEgzersizArray.count>0){
             for (AntremanEgzersiz *exercise in antEgzersizArray) {
                 if(exercise.KasNumarasi==1)
-                    [listKol addObject:exercise];
+                    [listBiceps addObject:exercise];
                 if(exercise.KasNumarasi==2)
                     [listGogus addObject:exercise];
                 if(exercise.KasNumarasi==3)
-                    [listBacak addObject:exercise];
-                if(exercise.KasNumarasi==4)
                     [listOmuz addObject:exercise];
-                if(exercise.KasNumarasi==5)
+                if(exercise.KasNumarasi==4)
                     [listSirt addObject:exercise];
-                if(exercise.KasNumarasi==6)
+                if(exercise.KasNumarasi==5)
                     [listKarin addObject:exercise];
-                if(exercise.KasNumarasi==7)
+                if(exercise.KasNumarasi==6)
                     [listCardio addObject:exercise];
+                if(exercise.KasNumarasi==7)
+                    [listKarin addObject:exercise];
+                if(exercise.KasNumarasi==8)
+                    [listBaldir addObject:exercise];
+                if(exercise.KasNumarasi==9)
+                    [listOnKol addObject:exercise];
+                if(exercise.KasNumarasi==10)
+                    [listOnBacak addObject:exercise];
+                if(exercise.KasNumarasi==11)
+                    [listTriceps addObject:exercise];
+                if(exercise.KasNumarasi==12)
+                    [listArkaBacak addObject:exercise];
+                if(exercise.KasNumarasi==13)
+                    [listTrapezius addObject:exercise];
             }
             
-            if(listKol.count>0){
-                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listKol forKey:@"data"];
+            if(listBiceps.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listBiceps forKey:@"data"];
                 [listFull addObject:firstItemsArrayDict];
             }
             if(listGogus.count>0){
                 NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listGogus forKey:@"data"];
-                [listFull addObject:firstItemsArrayDict];
-            }
-            if(listBacak.count>0){
-                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listBacak forKey:@"data"];
                 [listFull addObject:firstItemsArrayDict];
             }
             if(listOmuz.count>0){
@@ -94,6 +109,34 @@
             }
             if(listCardio.count>0){
                 NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listCardio forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listKanat.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listKanat forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listBaldir.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listBaldir forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listOnKol.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listOnKol forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listOnBacak.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listOnBacak forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listTriceps.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listTriceps forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listArkaBacak.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listArkaBacak forKey:@"data"];
+                [listFull addObject:firstItemsArrayDict];
+            }
+            if(listTrapezius.count>0){
+                NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:listTrapezius forKey:@"data"];
                 [listFull addObject:firstItemsArrayDict];
             }
             

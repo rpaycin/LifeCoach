@@ -18,6 +18,8 @@
 		135701CC1AE568AB0080DD74 /* MainInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CB1AE568AB0080DD74 /* MainInformationModel.m */; };
 		135701D01AE578610080DD74 /* TrainingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 135701CE1AE578610080DD74 /* TrainingTableViewCell.m */; };
 		135701D11AE578610080DD74 /* TrainingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135701CF1AE578610080DD74 /* TrainingTableViewCell.xib */; };
+		135D8BD11AF1473F005CF0CE /* GrafikViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135D8BD01AF1473F005CF0CE /* GrafikViewController.m */; };
+		135D8BD51AF1497C005CF0CE /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 135D8BD41AF1497C005CF0CE /* XYPieChart.m */; };
 		1395B0311ADB9CC800ACFBF9 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B02C1ADB9CC800ACFBF9 /* RECommonFunctions.m */; };
 		1395B0321ADB9CC800ACFBF9 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B02E1ADB9CC800ACFBF9 /* RESideMenu.m */; };
 		1395B0331ADB9CC800ACFBF9 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1395B0301ADB9CC800ACFBF9 /* UIViewController+RESideMenu.m */; };
@@ -105,6 +107,10 @@
 		135701CD1AE578610080DD74 /* TrainingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingTableViewCell.h; sourceTree = "<group>"; };
 		135701CE1AE578610080DD74 /* TrainingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingTableViewCell.m; sourceTree = "<group>"; };
 		135701CF1AE578610080DD74 /* TrainingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingTableViewCell.xib; sourceTree = "<group>"; };
+		135D8BCF1AF1473F005CF0CE /* GrafikViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrafikViewController.h; sourceTree = "<group>"; };
+		135D8BD01AF1473F005CF0CE /* GrafikViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrafikViewController.m; sourceTree = "<group>"; };
+		135D8BD31AF1497C005CF0CE /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		135D8BD41AF1497C005CF0CE /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
 		1395B02B1ADB9CC800ACFBF9 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		1395B02C1ADB9CC800ACFBF9 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		1395B02D1ADB9CC800ACFBF9 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -260,6 +266,15 @@
 			name = CMPopTipView;
 			sourceTree = "<group>";
 		};
+		135D8BD21AF1497C005CF0CE /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				135D8BD31AF1497C005CF0CE /* XYPieChart.h */,
+				135D8BD41AF1497C005CF0CE /* XYPieChart.m */,
+			);
+			path = XYPieChart;
+			sourceTree = "<group>";
+		};
 		1395B02A1ADB9CC800ACFBF9 /* RESideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +292,7 @@
 		1395B0341ADB9F2E00ACFBF9 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				135D8BD21AF1497C005CF0CE /* XYPieChart */,
 				134F987F1AE814FD00CD8454 /* CMPopTipView */,
 				1395B02A1ADB9CC800ACFBF9 /* RESideMenu */,
 				1395B0351ADB9F2E00ACFBF9 /* AFNetworking */,
@@ -520,6 +536,8 @@
 				1395B0D71ADBA24300ACFBF9 /* LoginViewController.h */,
 				1395B0D81ADBA24300ACFBF9 /* LoginViewController.m */,
 				3076CDF61809B50100527E6C /* Controllers */,
+				135D8BCF1AF1473F005CF0CE /* GrafikViewController.h */,
+				135D8BD01AF1473F005CF0CE /* GrafikViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -701,7 +719,9 @@
 				1395B0951ADB9F2E00ACFBF9 /* JSONModelClassProperty.m in Sources */,
 				1395B0AB1ADBA05500ACFBF9 /* SYDescriptionValue.m in Sources */,
 				1395B0981ADB9F2E00ACFBF9 /* JSONAPI.m in Sources */,
+				135D8BD11AF1473F005CF0CE /* GrafikViewController.m in Sources */,
 				13A9A6901AE98ED5001E6960 /* GetTrainingForSelectedDateResponse.m in Sources */,
+				135D8BD51AF1497C005CF0CE /* XYPieChart.m in Sources */,
 				1395B0A01ADB9F2E00ACFBF9 /* MBProgressHUD.m in Sources */,
 				1395B0E01ADBA27000ACFBF9 /* BaseViewController.m in Sources */,
 				1395B0E81ADBA29300ACFBF9 /* EgzersizViewController.m in Sources */,
